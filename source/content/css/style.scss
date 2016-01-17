@@ -1,0 +1,363 @@
+$color-main: #EEBEBE;
+$color-sub: #EE9CA1;
+$color-sub2: #61A173;
+
+/*---- mixin ----*/
+@mixin h1-font {
+    font: {
+        size: 16px;
+        size: 1.6rem;
+
+    }
+    color: #FFF;
+    margin: 0;
+    text-align: center;
+}
+
+@mixin h2-font {
+    font: {
+        size: 16px;
+        size: 1.6rem;
+    }
+    color: #555;
+    margin: 20px 0 16px 14px;
+    margin: 2rem 0 1.6rem 1.4rem;
+    padding: 0 0 0 10px;
+    padding: 0 0 0 1rem;
+}
+
+@mixin nav-set {
+    background: #EEE;
+    font-size: 10px;
+    font-size: 1.0rem;
+    color: #999;
+}
+
+@mixin nav-set-hover {
+    background: $color-sub;
+    color: #FFF;
+}
+
+
+/*---- base ----*/
+.font10 {
+	font-size: 10px;
+	font-size: 1.0rem;
+}
+
+.margin-left20 {
+	margin: 0 0 0 20px;
+	
+}
+
+a:hover {
+    text-decoration: none;
+}
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+.float-left {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0;
+    font:{
+        family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+        size: 14px;
+        size:1.4rem;
+    }
+}
+
+h1 {
+    @include h1-font;
+}
+section h1 {
+    @include h1-font;
+    border-left: 8px solid $color-main;
+    color: #555;
+    margin: 20px 0 16px 10px;
+    margin: 2rem 0 1.6rem 1rem;
+    padding: 0 0 0 10px;
+    padding: 0 0 0 1rem;
+    text-align: left;
+}
+section h2 {
+    @include h2-font;
+    border-left: 6px solid $color-main;
+}
+
+
+/*---- header ----*/
+
+header {
+    background: $color-main;
+    padding: 10px;
+}
+
+/*---- info ----*/
+.info {
+    margin: 6px auto;
+    text-align: center;
+}
+
+
+/*---- nav ----*/
+
+nav {
+    margin: 0px 0 0 0;
+}
+
+ul.g-nav {
+    display: table;
+    width: 100%;
+    padding: 0;
+}
+ul.g-nav li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 25%;
+    border-right: 2px solid #FFF;
+    border-bottom: 1px solid #CCC;
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.g-nav li>a {
+    display: block;
+    padding: 5px 0 3px 0;
+    text-decoration: none;
+    @include nav-set;
+        &:hover {
+             background: $color-sub;
+            color: #FFF;
+    }
+}
+.g-nav li a.current {
+    background: $color-sub;
+    color: #FFF;
+    border-bottom: none;
+}
+.defs {
+    display: none;
+}
+.icon {
+    width: 26px;
+    height: 26px;
+    fill: $color-sub;
+}
+
+/*---- sub-nav ----*/
+
+.sub-nav {
+    margin: 30px 0 0 0;
+}
+ ul.sub-nav li {
+    width: 20%;
+}
+ul.sub-nav li>a {
+    display: block;
+    padding: 5px;
+    @include nav-set;
+        &:hover {
+             background: $color-sub2;
+            color: #FFF;
+    }
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    color:#FFF;
+    background-color: $color-sub2;
+}
+#schedule .nav li>a {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/*---- main ----*/
+main {
+    margin: 0 10px;
+}
+
+/*---- section ----*/
+section {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+section p {
+    margin: 30px 0 30px 30px;
+    margin: 3rem 0 3rem 3rem;
+}
+.notice {
+	margin: 10px;
+	padding: 10px;
+	border: 3px solid $color-sub;
+	border-radius: 5px;
+}
+
+/*---- bootstrap row ----*/
+.banner {
+    margin: 3px;
+    padding: 10px 3px;
+    background: $color-sub2;
+    border-radius: 2px;
+    color: #FFF;
+    text-align: center;
+}
+
+/*---- map ----*/
+.leaflet-touch,
+.leaflet-control-layers {
+	overflow-y: scroll;
+}
+
+.ac-container label {
+    padding: 10px;
+    font-size: 11px;
+    font-size: 1.1rem;
+	height: 0;
+	line-height: 0;
+}
+.menu-item-checkbox,
+.menu-item-radio {
+    font-size: 10px;
+    font-size: 1.0rem;
+}
+.leaflet-right .leaflet-control {
+    margin-right: 0;
+}
+input[type=checkbox],
+input[type=radio] {
+	width: 14px;
+	height: 14px;
+	vertical-align: text-bottom;
+}
+/*
+.ac-container,
+.ac-large {
+	overflow-y: auto;
+}
+
+.ac-container::-webkit-scrollbar{
+		width: 5px;
+}
+.ac-container::-webkit-scrollbar-track {
+		border-radius: 5px;
+		background: #eee;
+	}
+.ac-container::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background: #666;
+		}
+*/
+.ac-large::-webkit-scrollbar{
+	width: 10px;
+}
+.ac-large::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background: #eee;
+}
+.ac-large::-webkit-scrollbar-tumb {
+	border-radius: 10px;
+	background: #666;
+}
+
+/*---- schedule ----*/
+.stacktable {
+    th,td {
+        padding: 2px 4px;
+
+    }
+    th {
+        @include nav-set-hover;
+        border: 1px solid #FFF;
+        }
+    td {
+        border-bottom: 1px solid #CCC;
+    }
+	.font10 {
+		font-size: 10px;
+		font-size: 1.0rem;
+		margin: 0 0 0 20px;
+	}
+}
+.st-key {
+	text-align: left;
+	vertical-align: top;
+}
+
+
+
+/*---- slide ----*/
+
+#slide1, #slide2 {
+    z-index: 500;
+    display: none;
+    width: 80%;
+    position: absolute;
+    bottom: 50px;
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 20px;
+    margin: 0;
+}
+
+/*---- modal nav ----*/
+#footer-nav{
+    ul {
+        margin: 0;
+    }
+    li {
+        @include nav-set;
+        display: inline-block;
+        padding: 6px;
+        margin: 0 2px 0 0px;
+        border-radius: 4px 4px 0 0;
+        cursor: pointer;
+    }
+    li:hover {
+        @include nav-set-hover;
+    }
+
+    li.button-active{
+        @include nav-set-hover;
+    }
+}
+#slide-overlay {
+    z-index:400;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:120%;
+    background-color:rgba(0,0,0,0.2);
+}
+
+/*---- footer ----*/
+
+footer {
+    text-align: center;
+    padding :0px;
+}
+.copyright {
+    border-top: 1px solid #CCC;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+@media(max-width: 560px) {
+    ul.sub-nav li {
+        width: 50%;
+    }
+}
+

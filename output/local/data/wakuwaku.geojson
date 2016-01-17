@@ -1,0 +1,8 @@
+var wakuwaku ={
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+
+"features": [
+{ "type": "Feature", "properties": { "lat": 139.957911, "lng": 35.801701, "icon": "img\/booth.png", "popup": "わくわくマーケット" }, "geometry": { "type": "Point", "coordinates": [ 139.9579109, 35.80170101 ] } }
+]
+}

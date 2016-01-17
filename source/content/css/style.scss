@@ -150,8 +150,8 @@ ul.g-nav li {
     display: none;
 }
 .icon {
-    width: 26px;
-    height: 26px;
+    width: 20px;
+    height: 20px;
     fill: $color-sub;
 }
 
@@ -216,10 +216,12 @@ section p {
 }
 
 /*---- map ----*/
+/*
 .leaflet-touch,
 .leaflet-control-layers {
 	overflow-y: scroll;
 }
+*/
 
 .ac-container label {
     padding: 10px;
@@ -238,9 +240,9 @@ section p {
 }
 input[type=checkbox],
 input[type=radio] {
-	width: 14px;
-	height: 14px;
-	vertical-align: text-bottom;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
 }
 /*
 .ac-container,
@@ -353,6 +355,12 @@ footer {
     border-top: 1px solid #CCC;
     font-size: 12px;
     font-size: 1.2rem;
+}
+@media(max-width:768px) {
+	.icon {
+		width: 16px;
+		height: 16px;
+	}
 }
 
 @media(max-width: 560px) {

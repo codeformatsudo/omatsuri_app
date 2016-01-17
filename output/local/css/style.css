@@ -108,8 +108,8 @@ ul.g-nav li {
   display: none; }
 
 .icon {
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
   fill: #EE9CA1; }
 
 /*---- sub-nav ----*/
@@ -170,10 +170,12 @@ section p {
   text-align: center; }
 
 /*---- map ----*/
+/*
 .leaflet-touch,
 .leaflet-control-layers {
-  overflow-y: scroll; }
-
+	overflow-y: scroll;
+}
+*/
 .ac-container label {
   padding: 10px;
   font-size: 11px;
@@ -191,9 +193,9 @@ section p {
 
 input[type=checkbox],
 input[type=radio] {
-  width: 14px;
-  height: 14px;
-  vertical-align: text-bottom; }
+  width: 20px;
+  height: 20px;
+  vertical-align: middle; }
 
 /*
 .ac-container,
@@ -293,6 +295,10 @@ footer {
   font-size: 12px;
   font-size: 1.2rem; }
 
+@media (max-width: 768px) {
+  .icon {
+    width: 16px;
+    height: 16px; } }
 @media (max-width: 560px) {
   ul.sub-nav li {
     width: 50%; } }

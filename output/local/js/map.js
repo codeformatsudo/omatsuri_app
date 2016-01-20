@@ -166,7 +166,7 @@ var eventlays = [
 ];
 
 var options = {
-    container_width :"130px",
+    container_width :"140px",
 	container_maxHeight: "80px",
 	group_maxHeight: "50px",
     collapsed: false,

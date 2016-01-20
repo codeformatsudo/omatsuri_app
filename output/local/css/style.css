@@ -63,6 +63,21 @@ header {
   background: #EEBEBE;
   padding: 10px; }
 
+header h1 img {
+  max-width: 100%;
+  height: auto; }
+
+.slide-button {
+  float: right;
+  font-size: 10px;
+  font-size: 1.0rem;
+  padding: 2px;
+  border: 1px solid #CCC;
+  background: #CCC;
+  border-radius: 4px;
+  color: #FFF;
+  margin: 10px; }
+
 /*---- info ----*/
 .info {
   margin: 6px auto;
@@ -193,8 +208,8 @@ section p {
 
 input[type=checkbox],
 input[type=radio] {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   vertical-align: middle; }
 
 /*
@@ -298,7 +313,12 @@ footer {
 @media (max-width: 768px) {
   .icon {
     width: 16px;
-    height: 16px; } }
+    height: 16px; }
+
+  header {
+    padding: 0; }
+    header .slide-button {
+      margin: 5px; } }
 @media (max-width: 560px) {
   ul.sub-nav li {
     width: 50%; } }

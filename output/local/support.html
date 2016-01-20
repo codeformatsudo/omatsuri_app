@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/L.Control.Locate.min.css">
     <link rel="stylesheet" href="css/styledLayerControl.css">
     <link rel="stylesheet" href="css/stacktable.css">
+   <link rel="stylesheet" href="css/jquery.mmenu.all.css">
      <link rel="stylesheet" href="css/style.css">
      <script src="js/footerFixed.js"></script>
     <title>協力・協賛</title>
  </head>
- <body>
+	<body class="drawer drawer--right">
   <svg class="defs">
     <symbol id="icon1" viewBox="0 0 512 512">
         <path d="M256,0C139.563,0,45.172,94.406,45.172,210.828S210.875,512,256,512c45.109,0,210.828-184.75,210.828-301.172
@@ -48,10 +49,29 @@
         433.198,483.676 433.198,312.083 256.089,134.959     "></polygon>
     </symbol>
 </svg>
+<div id="wrap">
 <header>
+	<a href="#slidebar" class="slide-button">ツイートを見る</a>
+	<h1><img src="img/logo01.png" alt="常盤平さくら祭り" width="280" height="54"></h1>
 
-    <h1><img src="img/sakura.png" alt="" widht="20" height="20">　常盤平さくら祭り</h1>
 </header>
+<div id="slidebar">
+	<div>
+		<a class="twitter-timeline" href="https://twitter.com/matsudo_kankou" data-widget-id="689393937946058752">@matsudo_kankouさんのツイート</a>
+		<script>
+			!function(d,s,id){
+				var js;
+				var fjs=d.getElementsByTagName(s)[0];
+				var p=/^http:/.test(d.location)?'http':'https';
+				if(!d.getElementById(id)){
+					js=d.createElement(s);
+					js.id=id;
+					js.src=p+"://platform.twitter.com/widgets.js";
+					fjs.parentNode.insertBefore(js,fjs);
+				}}(document,"script","twitter-wjs");
+		</script>
+	</div>
+</div>
 <nav>
     <ul class="g-nav">
        <li><a href="index.html" class="nav1">
@@ -83,6 +103,8 @@
     </ul>
 </nav>
 
+
+
   <main>
 	<section>
 		<h1>協力</h1>
@@ -93,15 +115,17 @@
 		ライフケア・メモリイプレイス常盤平、（財）住宅管理協会関東支部松戸住宅管理センター、新京成電鉄（株）、マブチモーター（株）、（株）トップ常盤平店、昭和セレモニー松戸儀式殿、（株）セレモ八柱駅北口ホール、サッポロビール（株）千葉支店、（株）杉浦葬儀店、アトレ松戸店、テイケイ（株）、常盤興業（株）、川光物産（株）、ピーナッツサブレー本舗富井、ユニディ松戸ときわ平店、千葉フィン港常盤平支店、京葉銀行常盤平支店、朝日信用金庫ときわ平支店、東京東信用金庫ときわ平支店、とうかつ中央農業協同組合常盤平支店、松戸南部市場いちごマルシェ（株）、松戸南ライオンズクラブ、ときわ平ボウリングセンター、利根コカコーラボトリング（株）松戸支店、（株）共立商事、松戸法人会常盤平1〜4支部、（株）東興不動産販売、（株）マツドサンヨー、わくわくマーケット、（株）３３工房、デイサービスもみの木、大衆割烹花車
 	</section>
 </main>
-  <footer>
+  
+   <footer>
     <div id="footer">
         <div class="copyright">powered by Code for Matsudo</div>
     </div>
 </footer>
-
+</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/jquery.mmenu.min.js"></script>
 <script src="js/main.js"></script>
 <script>
     if($("#home").length || $("#map-page").length) {
@@ -133,7 +157,14 @@
          $("#event-table1").stacktable();
         $("#event-table2").stacktable();
     };
-
+	$("#slidebar").mmenu({
+		slidingSubmenus: false,
+		offCanvas: {
+			position: 'right',
+			zposition: 'front'
+		}
+	});
+	
 </script>
 
  </body>

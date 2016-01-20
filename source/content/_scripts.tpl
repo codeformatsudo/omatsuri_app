@@ -1,5 +1,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/jquery.mmenu.min.js"></script>
 <script src="js/main.js"></script>
 <script>
     if($("#home").length || $("#map-page").length) {
@@ -31,5 +32,12 @@
          $("#event-table1").stacktable();
         $("#event-table2").stacktable();
     };
-
+	$("#slidebar").mmenu({
+		slidingSubmenus: false,
+		offCanvas: {
+			position: 'right',
+			zposition: 'front'
+		}
+	});
+	
 </script>

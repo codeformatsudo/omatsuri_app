@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/L.Control.Locate.min.css">
     <link rel="stylesheet" href="css/styledLayerControl.css">
     <link rel="stylesheet" href="css/stacktable.css">
+   <link rel="stylesheet" href="css/jquery.mmenu.all.css">
      <link rel="stylesheet" href="css/style.css">
      <script src="js/footerFixed.js"></script>
     <title>{$title}</title>
  </head>
- <body>
+	<body class="drawer drawer--right">
   {include file="_header.tpl"}
   {include file=$_content_tpl}
   {include file="_footer.tpl"}

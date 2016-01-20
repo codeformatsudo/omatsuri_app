@@ -32,10 +32,29 @@
         433.198,483.676 433.198,312.083 256.089,134.959     "></polygon>
     </symbol>
 </svg>
+<div id="wrap">
 <header>
+	<a href="#slidebar" class="slide-button">ツイートを見る</a>
+	<h1><img src="img/logo01.png" alt="常盤平さくら祭り" width="280" height="54"></h1>
 
-    <h1><img src="img/sakura.png" alt="" widht="20" height="20">　常盤平さくら祭り</h1>
 </header>
+<div id="slidebar">
+	<div>
+		<a class="twitter-timeline" href="https://twitter.com/matsudo_kankou" data-widget-id="689393937946058752">@matsudo_kankouさんのツイート</a>
+		<script>
+			!function(d,s,id){
+				var js;
+				var fjs=d.getElementsByTagName(s)[0];
+				var p=/^http:/.test(d.location)?'http':'https';
+				if(!d.getElementById(id)){
+					js=d.createElement(s);
+					js.id=id;
+					js.src=p+"://platform.twitter.com/widgets.js";
+					fjs.parentNode.insertBefore(js,fjs);
+				}}(document,"script","twitter-wjs");
+		</script>
+	</div>
+</div>
 <nav>
     <ul class="g-nav">
        <li><a href="index.html" class="nav1">
@@ -66,3 +85,5 @@
 
     </ul>
 </nav>
+
+

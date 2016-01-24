@@ -188,7 +188,7 @@ section p {
   /*
 .leaflet-touch,
 .leaflet-control-layers {
-	overflow-y: scroll;
+    overflow-y: scroll;
 }
 */ }
 
@@ -243,7 +243,8 @@ main .leaflet-top .leaflet-control-zoom {
 
 .menu-item-checkbox, .menu-item-radio {
   font-size: 9px;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  margin: 0 0 0 2px; }
 
 .leaflet-right .leaflet-control {
   margin-right: 0; }
@@ -255,20 +256,20 @@ input[type=checkbox], input[type=radio] {
   /*
 .ac-container,
 .ac-large {
-	overflow-y: auto;
+    overflow-y: auto;
 }
 
 .ac-container::-webkit-scrollbar{
-		width: 5px;
+        width: 5px;
 }
 .ac-container::-webkit-scrollbar-track {
-		border-radius: 5px;
-		background: #eee;
-	}
+        border-radius: 5px;
+        background: #eee;
+    }
 .ac-container::-webkit-scrollbar-thumb {
-		border-radius: 5px;
-		background: #666;
-		}
+        border-radius: 5px;
+        background: #666;
+        }
 */ }
 
 .ac-large::-webkit-scrollbar {

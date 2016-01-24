@@ -202,6 +202,10 @@ ul.sub-nav li>a {
     font-size: 1.4rem;
     font-weight: 700;
 }
+/*---- twitter-timeline ----*/
+.twitter-timeline {
+	display: none;
+}
 
 /*---- main ----*/
 main {
@@ -241,27 +245,71 @@ section p {
 	overflow-y: scroll;
 }
 */
+.leaflet-control-layers-overlays {
+	display: table;
+	table-layout: fixed;
+	widht: 100%;
+}
+.leaflet-control-layers-overlays > div {
+	display: table-cell;
+}
+.leaflet-control-layers {
+	background: none;
+	box-shadow: none;
+	border-radius: none;
+		&:hover {
+		background: none;
+		box-shadow: none;
+		border-radius: none;
+	}
+}
+.leaflet-touch .leaflet-control-layers {
+	border:none;
+}
+.ac-container article {
+	background: rgba(255,255,255,1.0);
+	border: 1px solid #CCC;
+}
 
+.leaflet-control-layers-expanded {
+	padding: 0;
+	background: none;
+}
+.leaflet-top .leaflet-control {
+	margin-top: 0;
+}
+main .leaflet-top .leaflet-control-zoom {
+	margin-top: 20px;
+}
+.ac-container {
+	margin: 0 auto;
+}
 .ac-container label {
     padding: 10px;
-    font-size: 11px;
-    font-size: 1.1rem;
+    font-size: 9px;
+    font-size: 0.9rem;
 	height: 0;
 	line-height: 0;
+	margin-bottom: 0;
+	border: 1px solid #CCC;
 }
+.ac-container input.menu:checked ~ article.ac-large{
+	max-height: 151px;
+}
+
 .menu-item-checkbox,
 .menu-item-radio {
-    font-size: 10px;
-    font-size: 1.0rem;
+    font-size: 9px;
+    font-size: 0.9rem;
 }
 .leaflet-right .leaflet-control {
     margin-right: 0;
 }
 input[type=checkbox],
 input[type=radio] {
-	width: 16px;
-	height: 16px;
-	vertical-align: middle;
+	width: 12px;
+	height: 12px;
+	vertical-align: text-bottom;
 }
 /*
 .ac-container,

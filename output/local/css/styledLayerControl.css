@@ -47,10 +47,10 @@
 .ac-container input.menu:checked + label:hover:after{
     content: '';
     position: absolute;
-    width: 24px;
-    height: 24px;
-    right: 13px;
-    top: 7px;
+    width: 14px;
+    height: 14px;
+    right: 0px;
+    top: 4px;
     background: transparent url(images/arrow_down.png) no-repeat center center;
 }
 .ac-container input.menu:checked + label:hover:after{

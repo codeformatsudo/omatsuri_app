@@ -1,17 +1,16 @@
 $(function() {
+	
 
 //mapSize
-
-function mapSize() {
-    var w = $(window).width();
-    var h = $(window).height();
-    var mapWidth = w - 20;
-    var mapHeight =  h - 20 - $("header").outerHeight() - $("nav").outerHeight() - $("footer").outerHeight();
-
+	function mapSize() {
+		var w = $(window).width();
+		var h = $(window).height();
+		var mapWidth = w - 20;
+		var mapHeight =  h - 20 - $("header").outerHeight() - $("nav").outerHeight() - $("footer").outerHeight();
     $("#map").css({"width": mapWidth + "px"});
     $("#map").css({"height": mapHeight + "px"});
-
 };
+	
 mapSize();
 $(window).resize(mapSize);
 
@@ -127,6 +126,11 @@ var ekimaeLayer = L.geoJson(ekimae, {
 		onEachFeature: onEachFeature,
 		pointToLayer: pointToLayer
 	});
+	
+	var honbuLayer = L.geoJson(honbu, {
+		onEachFeature: onEachFeature,
+		pointToLayer: pointToLayer
+	});
 
 var toiletLayer = L.geoJson(toilet, {
 onEachFeature: onEachFeature,
@@ -141,42 +145,60 @@ pointToLayer: pointToLayer
 
 
 var eventlays = [
-    {
-        groupName : "イベント場所",
-        expanded : true,
-        layers : {
-            "中央ステージ" : tyuouLayer,
-			"チャリティライブ": charityLayer,
-			"さくら通パレード": paradeSakuraLayer,
-			"ゆりの木通パレード": paradeYurinokiLayer,
-			"駅前ひろば": ekimaeLayer,
-			"テント村": tentomuraLayer,
-			"わくわく広場": wakuwakuLayer,
-			"献血車": bloodDonationLayer
-        }
-    }];
-	var overlays = [ {
-        groupName : "トイレ",
+	
+    ];
+	var overlays = [ 
+		{
+			groupName : "イベント場所",
+			expanded : false,
+			layers : {
+				"中央ステージ" : tyuouLayer,
+				"チャリティライブ": charityLayer,
+				"さくら通パレード": paradeSakuraLayer,
+				"ゆりの木通パレード": paradeYurinokiLayer,
+				"駅前ひろば": ekimaeLayer,
+				"テント村": tentomuraLayer,
+				"わくわく広場": wakuwakuLayer,
+				"献血車": bloodDonationLayer
+			}
+		},
+		{
+			groupName : "本部・町会テント",
+			expanded: false,
+			layers : {
+				"本部テント": honbuLayer
+				
+			}
+		},
+		{
+        groupName : "トイレ　　",
         expanded: false,
         layers : {
             "トイレ": toiletLayer,
             "多機能トイレ": multiLayer
-        }
-    }
+        	}
+    	}
 ];
 
 var options = {
-    container_width :"140px",
-	container_maxHeight: "80px",
-	group_maxHeight: "50px",
+	container_maxHeight : "500px", 
     collapsed: false,
     exclusive : false,
-    position : 'bottomright'
+    position : 'topright'
+	
 };
 
-var control = L.Control.styledLayerControl(eventlays, overlays, options);
+var control = L.Control.styledLayerControl('', overlays, options);
     map.addControl(control);
-
+	/*
+	function controlOptionHeight(){
+		var h = $(window).height();
+		var mapHeight =  h - 20 - $("header").outerHeight() - $("nav").outerHeight() - $("footer").outerHeight();
+		$(".ac-large").css({"maxHeight": mapHeight + "px"});
+	};
+	controlOptionHeight();
+	$(window).resize(controlOptionHeight);
+*/
 /*
 var csvContents = L.geoCsv(null,{
 fieldSeparator: ',',

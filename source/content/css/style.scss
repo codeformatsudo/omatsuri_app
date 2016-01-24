@@ -42,6 +42,11 @@ $color-sub2: #61A173;
 
 
 /*---- base ----*/
+.font14 {
+     font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
 .font10 {
     font-size: 10px;
     font-size: 1.0rem;
@@ -103,7 +108,7 @@ header {
     padding: 10px;
 }
 header h1 img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
 }
 .slide-button {

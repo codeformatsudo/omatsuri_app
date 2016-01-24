@@ -1,40 +1,46 @@
 /*---- mixin ----*/
 /*---- base ----*/
 /* line 45, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+.font14 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 700; }
+
+/* line 50, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .font10 {
   font-size: 10px;
   font-size: 1.0rem; }
 
-/* line 50, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 55, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .margin-left20 {
   margin: 0 0 0 20px; }
 
-/* line 55, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 60, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 a:hover {
   text-decoration: none; }
 
-/* line 58, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 63, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .center {
   margin: 0 auto;
   text-align: center; }
 
-/* line 62, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 67, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .float-left {
   float: left;
   margin: 0 10px 10px 0; }
 
-/* line 67, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 72, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 html {
   font-size: 62.5%; }
 
-/* line 71, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 76, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 body {
   padding: 0;
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-size: 14px;
   font-size: 1.4rem; }
 
-/* line 80, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 85, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 h1 {
   font-size: 16px;
   font-size: 1.6rem;
@@ -42,7 +48,7 @@ h1 {
   margin: 0;
   text-align: center; }
 
-/* line 83, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 88, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 section h1 {
   font-size: 16px;
   font-size: 1.6rem;
@@ -57,7 +63,7 @@ section h1 {
   padding: 0 0 0 1rem;
   text-align: left; }
 
-/* line 93, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 98, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 section h2 {
   font-size: 16px;
   font-size: 1.6rem;
@@ -69,17 +75,17 @@ section h2 {
   border-left: 6px solid #EEBEBE; }
 
 /*---- header ----*/
-/* line 101, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 106, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 header {
   background: #EEBEBE;
   padding: 10px; }
 
-/* line 105, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 110, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 header h1 img {
-  max-width: 100%;
+  max-width: 60%;
   height: auto; }
 
-/* line 109, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 114, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .slide-button {
   float: right;
   font-size: 10px;
@@ -92,23 +98,23 @@ header h1 img {
   margin: 10px; }
 
 /*---- info ----*/
-/* line 124, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 129, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .info {
   margin: 6px auto;
   text-align: center; }
 
 /*---- nav ----*/
-/* line 132, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 137, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 nav {
   margin: 0px 0 0 0; }
 
-/* line 136, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 141, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 ul.g-nav {
   display: table;
   width: 100%;
   padding: 0; }
 
-/* line 141, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 146, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 ul.g-nav li {
   display: table-cell;
   vertical-align: middle;
@@ -116,11 +122,11 @@ ul.g-nav li {
   width: 25%;
   border-right: 2px solid #FFF;
   border-bottom: 1px solid #CCC; }
-  /* line 148, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+  /* line 153, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
   ul.g-nav li:last-child {
     border-right: none; }
 
-/* line 153, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 158, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .g-nav li > a {
   display: block;
   padding: 5px 0 3px 0;
@@ -129,37 +135,37 @@ ul.g-nav li {
   font-size: 10px;
   font-size: 1.0rem;
   color: #999; }
-  /* line 158, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+  /* line 163, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
   .g-nav li > a:hover {
     background: #EE9CA1;
     color: #FFF; }
 
-/* line 163, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 168, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .g-nav li a.current {
   background: #EE9CA1;
   color: #FFF;
   border-bottom: none; }
 
-/* line 168, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 173, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .defs {
   display: none; }
 
-/* line 171, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 176, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .icon {
   width: 20px;
   height: 20px;
   fill: #EE9CA1; }
 
 /*---- sub-nav ----*/
-/* line 179, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 184, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .sub-nav {
   margin: 30px 0 0 0; }
 
-/* line 182, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 187, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 ul.sub-nav li {
   width: 20%; }
 
-/* line 185, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 190, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 ul.sub-nav li > a {
   display: block;
   padding: 5px;
@@ -167,46 +173,46 @@ ul.sub-nav li > a {
   font-size: 10px;
   font-size: 1.0rem;
   color: #999; }
-  /* line 189, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+  /* line 194, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
   ul.sub-nav li > a:hover {
     background: #61A173;
     color: #FFF; }
 
-/* line 196, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 201, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #FFF;
   background-color: #61A173; }
 
-/* line 200, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 205, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 #schedule .nav li > a {
   font-size: 14px;
   font-size: 1.4rem;
   font-weight: 700; }
 
 /*---- twitter-timeline ----*/
-/* line 206, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 211, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .twitter-timeline {
   display: none; }
 
 /*---- main ----*/
-/* line 211, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 216, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 main {
   margin: 0 10px; }
 
 /*---- section ----*/
-/* line 216, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 221, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 section {
   max-width: 1080px;
   margin: 0 auto; }
 
-/* line 220, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 225, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 section p {
   margin: 30px 0 30px 30px;
   margin: 3rem 0 3rem 3rem; }
 
-/* line 224, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 229, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .notice {
   margin: 10px;
   padding: 10px;
@@ -214,7 +220,7 @@ section p {
   border-radius: 5px; }
 
 /*---- bootstrap row ----*/
-/* line 232, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 237, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .banner {
   margin: 3px;
   padding: 10px 3px;
@@ -230,54 +236,54 @@ section p {
     overflow-y: scroll;
 }
 */
-/* line 248, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 253, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .leaflet-control-layers-overlays {
   display: table;
   table-layout: fixed;
   widht: 100%; }
 
-/* line 253, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 258, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .leaflet-control-layers-overlays > div {
   display: table-cell; }
 
-/* line 256, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 261, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .leaflet-control-layers {
   background: none;
   box-shadow: none;
   border-radius: none; }
-  /* line 260, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+  /* line 265, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
   .leaflet-control-layers:hover {
     background: none;
     box-shadow: none;
     border-radius: none; }
 
-/* line 266, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 271, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .leaflet-touch .leaflet-control-layers {
   border: none; }
 
-/* line 269, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 274, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .ac-container article {
   background: white;
   border: 1px solid #CCC; }
 
-/* line 274, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 279, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .leaflet-control-layers-expanded {
   padding: 0;
   background: none; }
 
-/* line 278, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 283, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .leaflet-top .leaflet-control {
   margin-top: 0; }
 
-/* line 281, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 286, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 main .leaflet-top .leaflet-control-zoom {
   margin-top: 20px; }
 
-/* line 284, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 289, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .ac-container {
   margin: 0 auto; }
 
-/* line 287, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 292, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .ac-container label {
   padding: 10px;
   font-size: 9px;
@@ -287,22 +293,22 @@ main .leaflet-top .leaflet-control-zoom {
   margin-bottom: 0;
   border: 1px solid #CCC; }
 
-/* line 296, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 301, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .ac-container input.menu:checked ~ article.ac-large {
   max-height: 151px; }
 
-/* line 301, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 306, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .menu-item-checkbox,
 .menu-item-radio {
   font-size: 9px;
   font-size: 0.9rem;
   margin: 0 0 0 2px; }
 
-/* line 306, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 311, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .leaflet-right .leaflet-control {
   margin-right: 0; }
 
-/* line 310, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 315, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 input[type=checkbox],
 input[type=radio] {
   width: 12px;
@@ -327,48 +333,48 @@ input[type=radio] {
         background: #666;
         }
 */
-/* line 333, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 338, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .ac-large::-webkit-scrollbar {
   width: 10px; }
 
-/* line 336, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 341, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .ac-large::-webkit-scrollbar-track {
   border-radius: 10px;
   background: #eee; }
 
-/* line 340, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 345, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .ac-large::-webkit-scrollbar-tumb {
   border-radius: 10px;
   background: #666; }
 
 /*---- schedule ----*/
-/* line 347, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 352, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .stacktable th, .stacktable td {
   padding: 2px 4px; }
 
-/* line 351, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 356, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .stacktable th {
   background: #EE9CA1;
   color: #FFF;
   border: 1px solid #FFF; }
 
-/* line 355, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 360, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .stacktable td {
   border-bottom: 1px solid #CCC; }
 
-/* line 358, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 363, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .stacktable .font10 {
   font-size: 10px;
   font-size: 1.0rem;
   margin: 0 0 0 20px; }
 
-/* line 364, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 369, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .st-key {
   text-align: left;
   vertical-align: top; }
 
 /*---- slide ----*/
-/* line 373, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 378, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 #slide1, #slide2 {
   z-index: 500;
   display: none;
@@ -381,11 +387,11 @@ input[type=radio] {
   margin: 0; }
 
 /*---- modal nav ----*/
-/* line 387, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 392, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 #footer-nav ul {
   margin: 0; }
 
-/* line 390, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 395, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 #footer-nav li {
   background: #EEE;
   font-size: 10px;
@@ -397,17 +403,17 @@ input[type=radio] {
   border-radius: 4px 4px 0 0;
   cursor: pointer; }
 
-/* line 398, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 403, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 #footer-nav li:hover {
   background: #EE9CA1;
   color: #FFF; }
 
-/* line 402, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 407, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 #footer-nav li.button-active {
   background: #EE9CA1;
   color: #FFF; }
 
-/* line 406, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 411, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 #slide-overlay {
   z-index: 400;
   position: fixed;
@@ -418,31 +424,31 @@ input[type=radio] {
   background-color: rgba(0, 0, 0, 0.2); }
 
 /*---- footer ----*/
-/* line 418, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 423, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 footer {
   text-align: center;
   padding: 0px; }
 
-/* line 422, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+/* line 427, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
 .copyright {
   border-top: 1px solid #CCC;
   font-size: 12px;
   font-size: 1.2rem; }
 
 @media (max-width: 768px) {
-  /* line 428, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+  /* line 433, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
   .icon {
     width: 16px;
     height: 16px; }
-  /* line 432, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+  /* line 437, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
   header {
     padding: 0; }
-    /* line 434, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+    /* line 439, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
     header .slide-button {
       margin: 5px; } }
 
 @media (max-width: 560px) {
-  /* line 441, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
+  /* line 446, C:/xampp/htdocs/sites/omatsuri/source/content/css/style.scss */
   ul.sub-nav li {
     width: 50%; } }
 

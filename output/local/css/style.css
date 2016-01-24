@@ -1,8 +1,7 @@
 /*---- mixin ----*/
-/*---- base ----*/
 .font10 {
   font-size: 10px;
-  font-size: 1.0rem; }
+  font-size: 1rem; }
 
 .margin-left20 {
   margin: 0 0 0 20px; }
@@ -30,17 +29,17 @@ body {
 h1 {
   font-size: 16px;
   font-size: 1.6rem;
-  color: #FFF;
+  color: #fff;
   margin: 0;
   text-align: center; }
 
 section h1 {
   font-size: 16px;
   font-size: 1.6rem;
-  color: #FFF;
+  color: #fff;
   margin: 0;
   text-align: center;
-  border-left: 8px solid #EEBEBE;
+  border-left: 8px solid #eebebe;
   color: #555;
   margin: 20px 0 16px 10px;
   margin: 2rem 0 1.6rem 1rem;
@@ -56,11 +55,11 @@ section h2 {
   margin: 2rem 0 1.6rem 1.4rem;
   padding: 0 0 0 10px;
   padding: 0 0 0 1rem;
-  border-left: 6px solid #EEBEBE; }
+  border-left: 6px solid #eebebe;
+  /*---- header ----*/ }
 
-/*---- header ----*/
 header {
-  background: #EEBEBE;
+  background: #eebebe;
   padding: 10px; }
 
 header h1 img {
@@ -70,20 +69,20 @@ header h1 img {
 .slide-button {
   float: right;
   font-size: 10px;
-  font-size: 1.0rem;
+  font-size: 1rem;
   padding: 2px;
-  border: 1px solid #CCC;
-  background: #CCC;
+  border: 1px solid #ccc;
+  background: #ccc;
   border-radius: 4px;
-  color: #FFF;
-  margin: 10px; }
+  color: #fff;
+  margin: 10px;
+  /*---- info ----*/ }
 
-/*---- info ----*/
 .info {
   margin: 6px auto;
-  text-align: center; }
+  text-align: center;
+  /*---- nav ----*/ }
 
-/*---- nav ----*/
 nav {
   margin: 0px 0 0 0; }
 
@@ -97,8 +96,8 @@ ul.g-nav li {
   vertical-align: middle;
   text-align: center;
   width: 25%;
-  border-right: 2px solid #FFF;
-  border-bottom: 1px solid #CCC; }
+  border-right: 2px solid #fff;
+  border-bottom: 1px solid #ccc; }
   ul.g-nav li:last-child {
     border-right: none; }
 
@@ -106,17 +105,17 @@ ul.g-nav li {
   display: block;
   padding: 5px 0 3px 0;
   text-decoration: none;
-  background: #EEE;
+  background: #eee;
   font-size: 10px;
-  font-size: 1.0rem;
+  font-size: 1rem;
   color: #999; }
   .g-nav li > a:hover {
-    background: #EE9CA1;
-    color: #FFF; }
+    background: #ee9ca1;
+    color: #fff; }
 
 .g-nav li a.current {
-  background: #EE9CA1;
-  color: #FFF;
+  background: #ee9ca1;
+  color: #fff;
   border-bottom: none; }
 
 .defs {
@@ -125,9 +124,9 @@ ul.g-nav li {
 .icon {
   width: 20px;
   height: 20px;
-  fill: #EE9CA1; }
+  fill: #ee9ca1;
+  /*---- sub-nav ----*/ }
 
-/*---- sub-nav ----*/
 .sub-nav {
   margin: 30px 0 0 0; }
 
@@ -137,34 +136,32 @@ ul.sub-nav li {
 ul.sub-nav li > a {
   display: block;
   padding: 5px;
-  background: #EEE;
+  background: #eee;
   font-size: 10px;
-  font-size: 1.0rem;
+  font-size: 1rem;
   color: #999; }
   ul.sub-nav li > a:hover {
-    background: #61A173;
-    color: #FFF; }
+    background: #61a173;
+    color: #fff; }
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  color: #FFF;
-  background-color: #61A173; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #fff;
+  background-color: #61a173; }
 
 #schedule .nav li > a {
   font-size: 14px;
   font-size: 1.4rem;
-  font-weight: 700; }
+  font-weight: 700;
+  /*---- twitter-timeline ----*/ }
 
-/*---- twitter-timeline ----*/
 .twitter-timeline {
-  display: none; }
+  display: none;
+  /*---- main ----*/ }
 
-/*---- main ----*/
 main {
-  margin: 0 10px; }
+  margin: 0 10px;
+  /*---- section ----*/ }
 
-/*---- section ----*/
 section {
   max-width: 1080px;
   margin: 0 auto; }
@@ -176,25 +173,25 @@ section p {
 .notice {
   margin: 10px;
   padding: 10px;
-  border: 3px solid #EE9CA1;
-  border-radius: 5px; }
+  border: 3px solid #ee9ca1;
+  border-radius: 5px;
+  /*---- bootstrap row ----*/ }
 
-/*---- bootstrap row ----*/
 .banner {
   margin: 3px;
   padding: 10px 3px;
-  background: #61A173;
+  background: #61a173;
   border-radius: 2px;
-  color: #FFF;
-  text-align: center; }
-
-/*---- map ----*/
-/*
+  color: #fff;
+  text-align: center;
+  /*---- map ----*/
+  /*
 .leaflet-touch,
 .leaflet-control-layers {
 	overflow-y: scroll;
 }
-*/
+*/ }
+
 .leaflet-control-layers-overlays {
   display: table;
   table-layout: fixed;
@@ -216,8 +213,8 @@ section p {
   border: none; }
 
 .ac-container article {
-  background: white;
-  border: 1px solid #CCC; }
+  background: #fff;
+  border: 1px solid #ccc; }
 
 .leaflet-control-layers-expanded {
   padding: 0;
@@ -239,26 +236,23 @@ main .leaflet-top .leaflet-control-zoom {
   height: 0;
   line-height: 0;
   margin-bottom: 0;
-  border: 1px solid #CCC; }
+  border: 1px solid #ccc; }
 
 .ac-container input.menu:checked ~ article.ac-large {
   max-height: 151px; }
 
-.menu-item-checkbox,
-.menu-item-radio {
+.menu-item-checkbox, .menu-item-radio {
   font-size: 9px;
   font-size: 0.9rem; }
 
 .leaflet-right .leaflet-control {
   margin-right: 0; }
 
-input[type=checkbox],
-input[type=radio] {
+input[type=checkbox], input[type=radio] {
   width: 12px;
   height: 12px;
-  vertical-align: text-bottom; }
-
-/*
+  vertical-align: text-bottom;
+  /*
 .ac-container,
 .ac-large {
 	overflow-y: auto;
@@ -275,7 +269,8 @@ input[type=radio] {
 		border-radius: 5px;
 		background: #666;
 		}
-*/
+*/ }
+
 .ac-large::-webkit-scrollbar {
   width: 10px; }
 
@@ -285,57 +280,60 @@ input[type=radio] {
 
 .ac-large::-webkit-scrollbar-tumb {
   border-radius: 10px;
-  background: #666; }
+  background: #666;
+  /*---- schedule ----*/ }
 
-/*---- schedule ----*/
 .stacktable th, .stacktable td {
   padding: 2px 4px; }
-.stacktable th {
-  background: #EE9CA1;
-  color: #FFF;
-  border: 1px solid #FFF; }
-.stacktable td {
-  border-bottom: 1px solid #CCC; }
-.stacktable .font10 {
-  font-size: 10px;
-  font-size: 1.0rem;
-  margin: 0 0 0 20px; }
+  .stacktable th {
+    background: #ee9ca1;
+    color: #fff;
+    /*---- base ----*/
+    border: 1px solid #fff; }
+  .stacktable td {
+    border-bottom: 1px solid #ccc; }
+  .stacktable .font10 {
+    font-size: 10px;
+    font-size: 1rem;
+    margin: 0 0 0 20px; }
 
 .st-key {
   text-align: left;
-  vertical-align: top; }
+  vertical-align: top;
+  /*---- slide ----*/ }
 
-/*---- slide ----*/
 #slide1, #slide2 {
   z-index: 500;
   display: none;
   width: 80%;
   position: absolute;
   bottom: 50px;
-  background: #FFF;
-  border: 1px solid #CCC;
+  background: #fff;
+  border: 1px solid #ccc;
   padding: 20px;
-  margin: 0; }
+  margin: 0;
+  /*---- modal nav ----*/ }
 
-/*---- modal nav ----*/
 #footer-nav ul {
   margin: 0; }
-#footer-nav li {
-  background: #EEE;
-  font-size: 10px;
-  font-size: 1.0rem;
-  color: #999;
-  display: inline-block;
-  padding: 6px;
-  margin: 0 2px 0 0px;
-  border-radius: 4px 4px 0 0;
-  cursor: pointer; }
-#footer-nav li:hover {
-  background: #EE9CA1;
-  color: #FFF; }
-#footer-nav li.button-active {
-  background: #EE9CA1;
-  color: #FFF; }
+  #footer-nav li {
+    background: #eee;
+    font-size: 10px;
+    font-size: 1rem;
+    color: #999;
+    display: inline-block;
+    padding: 6px;
+    margin: 0 2px 0 0px;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer; }
+  #footer-nav li:hover {
+    background: #ee9ca1;
+    color: #fff;
+    /*---- base ----*/ }
+  #footer-nav li.button-active {
+    background: #ee9ca1;
+    color: #fff;
+    /*---- base ----*/ }
 
 #slide-overlay {
   z-index: 400;
@@ -344,15 +342,15 @@ input[type=radio] {
   left: 0;
   width: 100%;
   height: 120%;
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.2);
+  /*---- footer ----*/ }
 
-/*---- footer ----*/
 footer {
   text-align: center;
-  padding: 0px; }
+  padding : 0px; }
 
 .copyright {
-  border-top: 1px solid #CCC;
+  border-top: 1px solid #ccc;
   font-size: 12px;
   font-size: 1.2rem; }
 
@@ -365,6 +363,7 @@ footer {
     padding: 0; }
     header .slide-button {
       margin: 5px; } }
+
 @media (max-width: 560px) {
   ul.sub-nav li {
     width: 50%; } }

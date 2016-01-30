@@ -3,20 +3,15 @@
 <script src="js/jquery.mmenu.min.js"></script>
 <script src="js/main.js"></script>
 <script>
-    if($("#home").length || $("#map-page").length) {
+    if($("#map-page").length) {
         $("<script>").attr("src", "js/leaflet.js").appendTo("body");
         $("<script>").attr("src", "js/leaflet.geocsv.js").appendTo("body");
         $("<script>").attr("src", "data/sakuradori.geojson").appendTo("body");
-    };
-    if($("#home").length) {
-        $("<script>").attr("src", "js/top-map.js").appendTo("body");
-    }
-    if($("#map-page").length) {
+   
         $("<script>").attr("src", "js/L.Control.Locate.min.js").appendTo("body");
         $("<script>").attr("src", "js/styledLayerControl.js").appendTo("body");
         $("<script>").attr("src", "js/map.js").appendTo("body");
         $("<script>").attr("src", "data/toilet.geojson").appendTo("body");
-        $("<script>").attr("src", "data/multi.geojson").appendTo("body");
         $("<script>").attr("src", "data/ekimae.geojson").appendTo("body");
 		$("<script>").attr("src", "data/tentomura.geojson").appendTo("body");
 		$("<script>").attr("src", "data/tyuou.geojson").appendTo("body");
@@ -26,6 +21,10 @@
 		$("<script>").attr("src", "data/parade-sakuradori.geojson").appendTo("body");
 		$("<script>").attr("src", "data/yurinoki.geojson").appendTo("body");
 		$("<script>").attr("src", "data/honbu.geojson").appendTo("body");
+		$("<script>").attr("src", "data/tent3.geojson").appendTo("body");
+		$("<script>").attr("src", "data/tent4.geojson").appendTo("body");
+		$("<script>").attr("src", "data/tent5.geojson").appendTo("body");
+		$("<script>").attr("src", "data/shelter.geojson").appendTo("body");
     };
 
     if($("#schedule").length) {

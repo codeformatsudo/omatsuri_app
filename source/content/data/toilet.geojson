@@ -3,12 +3,9 @@ var toilet = {
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 
 "features": [
-{ "type": "Feature", "properties": { "lat": 139.949750, "lng": 35.801490, "icon": "img\/toilet.png", "popup": "しょうぶ公園　簡易トイレ" }, "geometry": { "type": "Point", "coordinates": [ 139.94975, 35.80149 ] } },
-{ "type": "Feature", "properties": { "lat": 139.945913, "lng": 35.801445, "icon": "img\/toilet.png", "popup": "こでまり公園　簡易トイレ" }, "geometry": { "type": "Point", "coordinates": [ 139.9459134, 35.80144464 ] } },
-{ "type": "Feature", "properties": { "lat": 139.952832, "lng": 35.802185, "icon": "img\/toilet.png", "popup": "あべりあ公園　簡易トイレ" }, "geometry": { "type": "Point", "coordinates": [ 139.9528324, 35.80218496 ] } },
-{ "type": "Feature", "properties": { "lat": 139.955318, "lng": 35.803399, "icon": "img\/toilet.png", "popup": "ふよう公園　簡易トイレ" }, "geometry": { "type": "Point", "coordinates": [ 139.9553181, 35.8033986 ] } },
-{ "type": "Feature", "properties": { "lat": 139.958105, "lng": 35.801627, "icon": "img\/toilet.png", "popup": "はなみずき公園　簡易トイレ" }, "geometry": { "type": "Point", "coordinates": [ 139.9581047, 35.80162668 ] } },
-{ "type": "Feature", "properties": { "lat": 139.962205, "lng": 35.800838, "icon": "img\/toilet.png", "popup": "くぬぎ公園　簡易トイレ" }, "geometry": { "type": "Point", "coordinates": [ 139.962205399999988, 35.80083782 ] } },
-{ "type": "Feature", "properties": { "lat": 139.962650, "lng": 35.798280, "icon": "img\/toilet.png", "popup": "やまぶき公園　簡易トイレ" }, "geometry": { "type": "Point", "coordinates": [ 139.96265, 35.79828 ] } }
+{ "type": "Feature", "properties": { "lat": 139.950181, "lng": 35.801254, "icon": "img\/toilet.png", "popup": "しょうぶ公園　仮設トイレ" }, "geometry": { "type": "Point", "coordinates": [ 139.950181, 35.801254 ] } },
+{ "type": "Feature", "properties": { "lat": 139.952570, "lng": 35.802295, "icon": "img\/toilet.png", "popup": "あべりあ公園　仮設トイレ" }, "geometry": { "type": "Point", "coordinates": [ 139.952570, 35.802295 ] } },
+{ "type": "Feature", "properties": { "lat": 139.958061, "lng": 35.801588, "icon": "img\/toilet.png", "popup": "はなみずき公園　仮設トイレ" }, "geometry": { "type": "Point", "coordinates": [ 139.958061, 35.801588 ] } },
+{ "type": "Feature", "properties": { "lat": 139.963060, "lng": 35.798427, "icon": "img\/toilet.png", "popup": "やまぶき公園　仮設トイレ" }, "geometry": { "type": "Point", "coordinates": [ 139.963060, 35.798427 ] } }
 ]
 }

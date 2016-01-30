@@ -1,13 +1,20 @@
 <main id="home">
 
 	<section>
-		<p class="center">
-			平成28年<span class="h4">４</span>月<span class="h4">２</span>日（土）<span class="h5">11時〜19時</span>
-			<br><span class="h6">（交通規制 10時30分～19時）</span>
-			<br> 平成28年
-			<span class="h4">４</span>月<span class="h4">３</span>日（日）<span class="h5">10時〜18時</span>
-			<br><span class="h6">（交通規制　9時30分～18時）</span>
-		</p>
+		<div class="row">
+		
+			<div class="col-md-3">平成28年<span class="h3 font-color-sub">４</span>月<span class="h3 font-color-sub">２</span>日（土）</div>
+			<div class="col-md-3">　歩行者天国: 11時〜19時</div>
+			<div class="col-md-3">道路沿い屋台: 11時〜18時</div>
+			<div class="col-md-3">　　交通規制: 10時45分～19時</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">平成28年<span class="h3 font-color-sub">４</span>月<span class="h3 font-color-sub">３</span>日（日）</div>
+			<div class="col-md-3">　歩行者天国: 10時〜18時</div>
+			<div class="col-md-3">道路沿い屋台: 10時〜17時</div>
+			<div class="col-md-3">　　交通規制:  9時45分～18時</div>
+		
+		</div>
 	</section>
 	<!--
        <div id="top-map"></div>
@@ -49,9 +56,9 @@
 		<h1>問い合わせ</h1> 常盤平さくらまつり実行委員会
 		<br> 電話：090-6527-9348（当日のみ）
 	</section>
-	<section>
-		<div>主催：第43回常盤平さくらまつり実行委員会</div>
-		<div>後援：松戸市、松戸市観光協会、松戸商工会議所、松戸市社会福祉協議会</div>
+	<section class="top-footer">
+		<span class="sponsored">主催</span>第43回常盤平さくらまつり実行委員会 <br>
+		<span class="sponsored">後援</span>松戸市、松戸市観光協会、松戸商工会議所、松戸市社会福祉協議会
 
 	</section>
 </main>

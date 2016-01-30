@@ -35,7 +35,7 @@
 <div id="wrap">
 <header>
 	<a href="#slidebar" class="slide-button">ツイートを見る</a>
-	<h1><img src="img/logo01.png" alt="常盤平さくら祭り" width="280" height="54"></h1>
+	<h1><img src="img/logo01.png" alt="常盤平さくら祭り"></h1>
 
 </header>
 <div id="slidebar">

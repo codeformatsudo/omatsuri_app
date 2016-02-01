@@ -1,10 +1,10 @@
 var shelter = {
 "type": "FeatureCollection",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-                                                                                
+
 "features": [
-{ "type": "Feature", "properties": { "lat": 139.949759, "lng": 35.797698, "icon": "img\/tent.png", "popup": "5丁目テント" }, "geometry": { "type": "Point", "coordinates": [ 139.949759, 35.797698 ] } },
-{ "type": "Feature", "properties": { "lat": 139.954960, "lng": 35.799514, "icon": "img\/tent.png", "popup": "5丁目テント" }, "geometry": { "type": "Point", "coordinates": [ 139.954960, 35.799514 ] } },
-{ "type": "Feature", "properties": { "lat": 139.957499, "lng": 35.799643, "icon": "img\/tent.png", "popup": "5丁目テント" }, "geometry": { "type": "Point", "coordinates": [ 139.957499, 35.799643 ] } }
+{ "type": "Feature", "properties": { "lat": 139.949759, "lng": 35.797698, "icon": "img\/shelter.png", "popup": "常盤平第一小学校" }, "geometry": { "type": "Point", "coordinates": [ 139.949759, 35.797698 ] } },
+{ "type": "Feature", "properties": { "lat": 139.954960, "lng": 35.799514, "icon": "img\/shelter.png", "popup": "金ヶ作公園" }, "geometry": { "type": "Point", "coordinates": [ 139.954960, 35.799514 ] } },
+{ "type": "Feature", "properties": { "lat": 139.957499, "lng": 35.799643, "icon": "img\/shelter.png", "popup": "常盤平第二小学校" }, "geometry": { "type": "Point", "coordinates": [ 139.957499, 35.799643 ] } }
 ]
 }

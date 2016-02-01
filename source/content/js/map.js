@@ -1,243 +1,243 @@
 $(function () {
 
 
-	//mapSize
-	function mapSize() {
-		var w = $(window).width();
-		var h = $(window).height();
-		var mapWidth = w - 20;
-		var mapHeight = h - 20 - $("header").outerHeight() - $("nav").outerHeight() - $("footer").outerHeight();
-		$("#map").css({
-			"width": mapWidth + "px"
-		});
-		$("#map").css({
-			"height": mapHeight + "px"
-		});
-	};
+    //mapSize
+    function mapSize() {
+        var w = $(window).width();
+        var h = $(window).height();
+        var mapWidth = w - 20;
+        var mapHeight = h - 20 - $("header").outerHeight() - $("nav").outerHeight() - $("footer").outerHeight();
+        $("#map").css({
+            "width": mapWidth + "px"
+        });
+        $("#map").css({
+            "height": mapHeight + "px"
+        });
+    };
 
-	mapSize();
-	$(window).resize(mapSize);
+    mapSize();
+    $(window).resize(mapSize);
 
-	var lat = "35.800550";
-	var lng = "139.951673";
-	var zoomSize = '';
-
-
-	//zoomSize
-
-	var w = $(window).width();
-	if (w <= 768) {
-		zoomSize = 15;
-	} else {
-		zoomSize = 16;
-	};
-
-	var map = L.map('map').setView([lat, lng], zoomSize);
-
-	var osmLayer = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-		maxZoom: 18,
-		layers: osmLayer
-	}).addTo(map);
-
-	var streetStyle = {
-		"color": "#EE9D9E",
-		"fiilColor": "#EE9D9E",
-		"fillOpacity": 0.8
-	};
+    var lat = "35.800550";
+    var lng = "139.951673";
+    var zoomSize = '';
 
 
-	var paradeStyle = {
-		"color": "#FF7E00",
-		"weight": "7",
-		"fillOpacity": 1.0
-	};
+    //zoomSize
 
-	L.geoJson(sakuradori, {
-		style: streetStyle
-	}).addTo(map);
+    var w = $(window).width();
+    if (w <= 768) {
+        zoomSize = 15;
+    } else {
+        zoomSize = 16;
+    };
+
+    var map = L.map('map').setView([lat, lng], zoomSize);
+
+    var osmLayer = L.tileLayer('http://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
+  attribution: "<a href='http://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>",
+        maxZoom: 18,
+        layers: osmLayer
+    }).addTo(map);
+
+    var streetStyle = {
+        "color": "#EE9D9E",
+        "fiilColor": "#EE9D9E",
+        "fillOpacity": 0.8
+    };
 
 
+    var paradeStyle = {
+        "color": "#FF7E00",
+        "weight": "7",
+        "fillOpacity": 1.0
+    };
 
-	var lc = L.control.locate({
-		layer: new L.LayerGroup(),
-		drawCircle: false,
-		keepCurrentZoomLevel: true,
-
-		icon: 'fa fa-map-marker',
-		follow: true,
-		showPopup: true,
-		strings: {
-			title: "現在地",
-			popup: "現在地",
-
-		}
-	}).addTo(map);
+    L.geoJson(sakuradori, {
+        style: streetStyle
+    }).addTo(map);
 
 
 
-	function onEachFeature(feature, layer) {
-		if (feature.properties && feature.properties["popup"]) {
-			layer.bindPopup(feature.properties["popup"]);
-		}
-	};
+    var lc = L.control.locate({
+        layer: new L.LayerGroup(),
+        drawCircle: false,
+        keepCurrentZoomLevel: true,
 
-	function pointToLayer(feature, latlng) {
-		return L.marker(latlng, {
-			icon: L.icon({
-				iconUrl: feature.properties["icon"],
-				shadowUrl: 'img/shadow.png',
-				iconSize: [39, 46],
-				shadowSize: [31, 25],
-				shadowAnchor: [0, 5]
-			})
-		});
-	};
-	
-	
-	/*
-	
-	
-	var csvContents = L.geoCsv(null,{
-	fieldSeparator: ',',
-	lineSeparator: '\n',
-	firstLineTitles: true,
-	onEachFeature: onEachFeature,
-	pointToLayer: pointToLayer
-	});
-	
-	function getData(url) {
-		return $.ajax({
-			type: 'get',
-			url: url
-		});
-	}
-	var toiletcsv;
-	 getData('./data/toilet.csv').then(function(data){
-		toiletcsv = data;
-		 
-	})
-	 var toiletLayer = csvContents.addData(toiletcsv);
-	console.log(toiletLayer);
-	
+        icon: 'fa fa-map-marker',
+        follow: true,
+        showPopup: true,
+        strings: {
+            title: "現在地",
+            popup: "現在地",
+
+        }
+    }).addTo(map);
+
+
+
+    function onEachFeature(feature, layer) {
+        if (feature.properties && feature.properties["popup"]) {
+            layer.bindPopup(feature.properties["popup"]);
+        }
+    };
+
+    function pointToLayer(feature, latlng) {
+        return L.marker(latlng, {
+            icon: L.icon({
+                iconUrl: feature.properties["icon"],
+                shadowUrl: 'img/shadow.png',
+                iconSize: [39, 46],
+                shadowSize: [31, 25],
+                shadowAnchor: [0, 5]
+            })
+        });
+    };
+
+
+    /*
+
+
+    var csvContents = L.geoCsv(null,{
+    fieldSeparator: ',',
+    lineSeparator: '\n',
+    firstLineTitles: true,
+    onEachFeature: onEachFeature,
+    pointToLayer: pointToLayer
+    });
+
+    function getData(url) {
+        return $.ajax({
+            type: 'get',
+            url: url
+        });
+    }
+    var toiletcsv;
+     getData('./data/toilet.csv').then(function(data){
+        toiletcsv = data;
+
+    })
+     var toiletLayer = csvContents.addData(toiletcsv);
+    console.log(toiletLayer);
+
 
 */
-	var tyuouLayer = L.geoJson(tyuou, {
-		onEachFeature: onEachFeature,
-		pointToLayer: pointToLayer
-	}).addTo(map);
+    var tyuouLayer = L.geoJson(tyuou, {
+        onEachFeature: onEachFeature,
+        pointToLayer: pointToLayer
+    }).addTo(map);
 
-	var charityLayer = L.geoJson(charity, {
-		onEachFeature: onEachFeature,
-		pointToLayer: pointToLayer
-	});
-	
+    var charityLayer = L.geoJson(charity, {
+        onEachFeature: onEachFeature,
+        pointToLayer: pointToLayer
+    });
 
-	var paradeSakuraLayer = L.geoJson(paradeSakuradori, {
-		style: paradeStyle
-	});
 
-	var paradeYurinokiLayer = L.geoJson(paradeYurinoki, {
-		style: paradeStyle
-	});
+    var paradeSakuraLayer = L.geoJson(paradeSakuradori, {
+        style: paradeStyle
+    });
 
-	var ekimaeLayer = L.geoJson(ekimae, {
-		onEachFeature: onEachFeature,
-		pointToLayer: pointToLayer
-	});
+    var paradeYurinokiLayer = L.geoJson(paradeYurinoki, {
+        style: paradeStyle
+    });
 
-	var tentomuraLayer = L.geoJson(tentomura, {
-		onEachFeature: onEachFeature,
-		pointToLayer: pointToLayer
-	});
+    var ekimaeLayer = L.geoJson(ekimae, {
+        onEachFeature: onEachFeature,
+        pointToLayer: pointToLayer
+    });
 
-	var wakuwakuLayer = L.geoJson(wakuwaku, {
-		onEachFeature: onEachFeature,
-		pointToLayer: pointToLayer
-	});
+    var tentomuraLayer = L.geoJson(tentomura, {
+        onEachFeature: onEachFeature,
+        pointToLayer: pointToLayer
+    });
 
-	var bloodDonationLayer = L.geoJson(bloodDonation, {
-		onEachFeature: onEachFeature,
-		pointToLayer: pointToLayer
-	});
+    var wakuwakuLayer = L.geoJson(wakuwaku, {
+        onEachFeature: onEachFeature,
+        pointToLayer: pointToLayer
+    });
 
-	var honbuLayer = L.geoJson(honbu, {
-		onEachFeature: onEachFeature,
-		pointToLayer: pointToLayer
-	});
-	
-	var tent3Layer = L.geoJson(tent3, {
-		onEachFeature: onEachFeature,
-		pointToLayer: pointToLayer
-	});
-	var tent4Layer = L.geoJson(tent4, {
-		onEachFeature: onEachFeature,
-		pointToLayer: pointToLayer
-	});
-	var tent5Layer = L.geoJson(tent5, {
-		onEachFeature: onEachFeature,
-		pointToLayer: pointToLayer
-	});
-	var shelterLayer = L.geoJson(shelter, {
-		onEachFeature: onEachFeature,
-		pointToLayer: pointToLayer
-	});
-	
+    var bloodDonationLayer = L.geoJson(bloodDonation, {
+        onEachFeature: onEachFeature,
+        pointToLayer: pointToLayer
+    });
 
-	var toiletLayer = L.geoJson(toilet, {
-		onEachFeature: onEachFeature,
-		pointToLayer: pointToLayer
-	});
+    var honbuLayer = L.geoJson(honbu, {
+        onEachFeature: onEachFeature,
+        pointToLayer: pointToLayer
+    });
 
-	var eventlays = [
+    var tent3Layer = L.geoJson(tent3, {
+        onEachFeature: onEachFeature,
+        pointToLayer: pointToLayer
+    });
+    var tent4Layer = L.geoJson(tent4, {
+        onEachFeature: onEachFeature,
+        pointToLayer: pointToLayer
+    });
+    var tent5Layer = L.geoJson(tent5, {
+        onEachFeature: onEachFeature,
+        pointToLayer: pointToLayer
+    });
+    var shelterLayer = L.geoJson(shelter, {
+        onEachFeature: onEachFeature,
+        pointToLayer: pointToLayer
+    });
+
+
+    var toiletLayer = L.geoJson(toilet, {
+        onEachFeature: onEachFeature,
+        pointToLayer: pointToLayer
+    });
+
+    var eventlays = [
 
     ];
-	var overlays = [
-		
-		{
-			groupName: "イベント場所",
-			expanded: false,
-			layers: {
-				"中央ステージ": tyuouLayer,
-				"チャリティライブ": charityLayer,
-				"さくら通パレード": paradeSakuraLayer,
-				"ゆりの木通パレード": paradeYurinokiLayer,
-				"駅前ひろば": ekimaeLayer,
-				"テント村": tentomuraLayer,
-				"わくわく広場": wakuwakuLayer,
-				"献血車": bloodDonationLayer
-			}
-		},
-		{
-			groupName: "テント・避難所",
-			expanded: false,
-			layers: {
-				"本部テント": honbuLayer,
-				"3丁目テント": tent3Layer,
-				"4丁目テント": tent4Layer,
-				"5丁目テント": tent5Layer,
-				"緊急避難場所": shelterLayer
-			}
-		},
-		{
-			groupName: "トイレ　　",
-			expanded: false,
-			layers: {
-				"仮設トイレ": toiletLayer,
-			}
-    	}
+    var overlays = [
+
+        {
+            groupName: "イベント場所",
+            expanded: false,
+            layers: {
+                "中央ステージ": tyuouLayer,
+                "チャリティライブ": charityLayer,
+                "さくら通パレード": paradeSakuraLayer,
+                "ゆりの木通パレード": paradeYurinokiLayer,
+                "駅前ひろば": ekimaeLayer,
+                "テント村": tentomuraLayer,
+                "わくわく広場": wakuwakuLayer,
+                "献血車": bloodDonationLayer
+            }
+        },
+        {
+            groupName: "テント・避難所",
+            expanded: false,
+            layers: {
+                "本部テント": honbuLayer,
+                "3丁目テント": tent3Layer,
+                "4丁目テント": tent4Layer,
+                "5丁目テント": tent5Layer,
+                "緊急避難場所": shelterLayer
+            }
+        },
+        {
+            groupName: "トイレ　　",
+            expanded: false,
+            layers: {
+                "仮設トイレ": toiletLayer,
+            }
+        }
 ];
 
-	var options = {
-		container_maxHeight: "500px",
-		collapsed: false,
-		exclusive: false,
-		position: 'topright'
+    var options = {
+        container_maxHeight: "500px",
+        collapsed: false,
+        exclusive: false,
+        position: 'topright'
 
-	};
+    };
 
-	var control = L.Control.styledLayerControl('', overlays, options);
-	map.addControl(control);
+    var control = L.Control.styledLayerControl('', overlays, options);
+    map.addControl(control);
 
 
 

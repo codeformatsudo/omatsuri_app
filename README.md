@@ -5,6 +5,3 @@
 マップはleaflet.jsとそのプラグインを使用。
 
 サイトは静的サイトジェネレーター[Phest](https://github.com/chatwork/Phest)を使用しています。
-
-***Demo***
-[デモ](https://dl.dropboxusercontent.com/u/387903/sakura-matsuri2/index.html)

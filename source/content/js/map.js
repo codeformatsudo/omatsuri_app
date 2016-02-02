@@ -34,11 +34,7 @@ $(function () {
 
     var map = L.map('map').setView([lat, lng], zoomSize);
 
-    var osmLayer = L.tileLayer('http://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
-  attribution: "<a href='http://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>",
-        maxZoom: 18,
-        layers: osmLayer
-    }).addTo(map);
+
 
     var streetStyle = {
         "color": "#EE9D9E",
@@ -189,8 +185,22 @@ $(function () {
         pointToLayer: pointToLayer
     });
 
-    var eventlays = [
+    var osmLayer = L.tileLayer.provider('OpenStreetMap').addTo(map);
+    var mqoLayer = L.tileLayer.provider('MapQuestOpen');
+    var stamenLayer = L.tileLayer.provider('Stamen');
+    var cartoDbLayer = L.tileLayer.provider('CartoDB');
 
+    var baseMaps = [
+        {
+            groupName: "背景地図",
+            expanded: false,
+            layers: {
+                "OSM": osmLayer,
+                "MapQuestOpen": mqoLayer,
+                "Stamen": stamenLayer,
+                "CartoDB": cartoDbLayer
+        }
+        }
     ];
     var overlays = [
 
@@ -236,7 +246,7 @@ $(function () {
 
     };
 
-    var control = L.Control.styledLayerControl('', overlays, options);
+    var control = L.Control.styledLayerControl(baseMaps, overlays, options);
     map.addControl(control);
 
 

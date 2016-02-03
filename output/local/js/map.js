@@ -186,9 +186,12 @@ $(function () {
     });
 
     var osmLayer = L.tileLayer.provider('OpenStreetMap').addTo(map);
+    var osmFranceLayer = L.tileLayer.provider('OpenStreetMap.France');
     var mqoLayer = L.tileLayer.provider('MapQuestOpen');
-    var stamenLayer = L.tileLayer.provider('Stamen');
+    var stamenLayer = L.tileLayer.provider('Stamen.TonerLite');
     var cartoDbLayer = L.tileLayer.provider('CartoDB');
+    var thunderforestLayer = L.tileLayer.provider('Thunderforest');
+
 
     var baseMaps = [
         {
@@ -196,9 +199,12 @@ $(function () {
             expanded: false,
             layers: {
                 "OSM": osmLayer,
+                "OSM.France" : osmFranceLayer,
                 "MapQuestOpen": mqoLayer,
                 "Stamen": stamenLayer,
-                "CartoDB": cartoDbLayer
+                "CartoDB": cartoDbLayer,
+                "Thunderforest": thunderforestLayer
+
         }
         }
     ];

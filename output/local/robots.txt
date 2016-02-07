@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: http://localhost/Phest/sites/skaura-matsuri/output/local/sitemap.xml

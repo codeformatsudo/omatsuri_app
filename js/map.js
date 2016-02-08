@@ -254,6 +254,8 @@ $(function () {
     var control = L.Control.styledLayerControl(baseMaps, overlays, options);
     map.addControl(control);
 
-
-
+overlays = L.featureGroup().on("click", function(e){
+	map.fitBounds(this.getBounds());
+});
+	map.invalidateSize();
 });

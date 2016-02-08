@@ -81,5 +81,5 @@ $(function () {
 		.addTo(controller);
 
 	var top = $('html').offset().top;
-	console.log(top);
+	
 });

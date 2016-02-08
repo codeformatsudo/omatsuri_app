@@ -360,6 +360,7 @@ L.Control.StyledLayerControl = L.Control.Layers.extend({
 
 				if (input.checked && !this._map.hasLayer(obj.layer)) {
 					this._map.addLayer(obj.layer);
+					
 
 				} else if (!input.checked && this._map.hasLayer(obj.layer)) {
 					this._map.removeLayer(obj.layer);

@@ -3,6 +3,6 @@ var ekimae ={
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
                                                                                 
 "features": [
-{ "type": "Feature", "properties": { "lat": 139.950517, "lng": 35.803086, "icon": "img\/booth.png", "popup": "駅前ひろば" }, "geometry": { "type": "Point", "coordinates": [ 139.9505172, 35.80308586 ] } }
+{ "type": "Feature", "properties": { "lat": 139.950554, "lng": 35.803002, "icon": "img\/booth.png", "popup": "駅前ひろば" }, "geometry": { "type": "Point", "coordinates": [ 139.950554, 35.803002 ] } }
 ]
 }

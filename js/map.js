@@ -5,7 +5,7 @@ $(function () {
     function mapSize() {
         var w = $(window).width();
         var h = $(window).height();
-        var mapWidth = w - 30;
+        var mapWidth = w - 40;
         var mapHeight = h - 20 - $("header").outerHeight() - $("nav").outerHeight() - $("footer").outerHeight();
         $("#map").css({
             "width": mapWidth + "px"
@@ -42,7 +42,7 @@ $(function () {
 
 
     var paradeStyle = {
-        "color": "#FF7E00",
+		"color": "#E8580C",
         "weight": "7",
         "fillOpacity": 1.0
     };
@@ -127,15 +127,6 @@ $(function () {
         pointToLayer: pointToLayer
     });
 
-
-    var paradeSakuraLayer = L.geoJson(paradeSakuradori, {
-        style: paradeStyle
-    });
-
-    var paradeYurinokiLayer = L.geoJson(paradeYurinoki, {
-        style: paradeStyle
-    });
-
     var ekimaeLayer = L.geoJson(ekimae, {
         onEachFeature: onEachFeature,
         pointToLayer: pointToLayer
@@ -178,11 +169,23 @@ $(function () {
         pointToLayer: pointToLayer
     });
 
-
     var toiletLayer = L.geoJson(toilet, {
         onEachFeature: onEachFeature,
         pointToLayer: pointToLayer
     }).addTo(map);
+	
+	var paradeTyuoLayer = L.geoJson(paradeTyuo, {
+		style: paradeStyle
+	});
+
+	var paradeZenLayer = L.geoJson(paradeZen, {
+		style: paradeStyle
+	});
+	
+	var paradeGokoLayer = L.geoJson(paradeGoko, {
+		style: paradeStyle
+	})
+
 
     var osmLayer = L.tileLayer.provider('OpenStreetMap').addTo(map);
     var osmFranceLayer = L.tileLayer.provider('OpenStreetMap.France');
@@ -215,8 +218,6 @@ $(function () {
             layers: {
                 "中央ステージ": tyuouLayer,
                 "チャリティライブ": charityLayer,
-                "中央パレード": paradeSakuraLayer,
-                "全さくら通りパレード": paradeYurinokiLayer,
                 "駅前ひろば": ekimaeLayer,
                 "テント村": tentomuraLayer,
                 "わくわく広場": wakuwakuLayer,
@@ -235,12 +236,21 @@ $(function () {
             }
         },
         {
-            groupName: "トイレ　　",
+            groupName: "トイレ",
             expanded: true,
             layers: {
                 "仮設トイレ": toiletLayer,
             }
-        }
+        },
+		{
+			groupName: "パレード",
+			expanded: false,
+			layers: {
+				"中央パレード": paradeTyuoLayer,
+				"全さくら通りパレード": paradeZenLayer,
+				"五香パレード": paradeGokoLayer
+			}
+		}
 ];
 
     var options = {
@@ -254,8 +264,5 @@ $(function () {
     var control = L.Control.styledLayerControl(baseMaps, overlays, options);
     map.addControl(control);
 
-overlays = L.featureGroup().on("click", function(e){
-	map.fitBounds(this.getBounds());
-});
-	map.invalidateSize();
+	
 });

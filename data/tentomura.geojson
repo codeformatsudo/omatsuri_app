@@ -3,6 +3,6 @@ var tentomura ={
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 
 "features": [
-{ "type": "Feature", "properties": { "lat": 139.950335, "lng": 35.802862, "icon": "img\/booth.png", "popup": "テント村" }, "geometry": { "type": "Point", "coordinates": [ 139.9503354, 35.80286181 ] } }
+{ "type": "Feature", "properties": { "lat": 139.950724, "lng": 35.802679, "icon": "img\/booth.png", "popup": "テント村" }, "geometry": { "type": "Point", "coordinates": [ 139.950724, 35.802679 ] } }
 ]
 }

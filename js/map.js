@@ -42,7 +42,7 @@ $(function () {
 
 
     var paradeStyle = {
-		"color": "#E8580C",
+        "color": "#E8580C",
         "weight": "7",
         "fillOpacity": 1.0
     };
@@ -173,18 +173,18 @@ $(function () {
         onEachFeature: onEachFeature,
         pointToLayer: pointToLayer
     }).addTo(map);
-	
-	var paradeTyuoLayer = L.geoJson(paradeTyuo, {
-		style: paradeStyle
-	});
 
-	var paradeZenLayer = L.geoJson(paradeZen, {
-		style: paradeStyle
-	});
-	
-	var paradeGokoLayer = L.geoJson(paradeGoko, {
-		style: paradeStyle
-	})
+    var paradeTyuoLayer = L.geoJson(paradeTyuo, {
+        style: paradeStyle
+    });
+
+    var paradeZenLayer = L.geoJson(paradeZen, {
+        style: paradeStyle
+    });
+
+    var paradeGokoLayer = L.geoJson(paradeGoko, {
+        style: paradeStyle
+    })
 
 
     var osmLayer = L.tileLayer.provider('OpenStreetMap').addTo(map);
@@ -225,6 +225,15 @@ $(function () {
             }
         },
         {
+            groupName: "パレード",
+            expanded: false,
+            layers: {
+                "中央パレード": paradeTyuoLayer,
+                "全さくら通りパレード": paradeZenLayer,
+                "五香パレード": paradeGokoLayer
+            }
+        },
+        {
             groupName: "テント・避難所",
             expanded: false,
             layers: {
@@ -242,15 +251,6 @@ $(function () {
                 "仮設トイレ": toiletLayer,
             }
         },
-		{
-			groupName: "パレード",
-			expanded: false,
-			layers: {
-				"中央パレード": paradeTyuoLayer,
-				"全さくら通りパレード": paradeZenLayer,
-				"五香パレード": paradeGokoLayer
-			}
-		}
 ];
 
     var options = {
@@ -264,5 +264,4 @@ $(function () {
     var control = L.Control.styledLayerControl(baseMaps, overlays, options);
     map.addControl(control);
 
-	
 });

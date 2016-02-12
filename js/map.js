@@ -147,6 +147,19 @@ $(function () {
         pointToLayer: pointToLayer
     });
 
+    var paradeTyuoLayer = L.geoJson(paradeTyuo, {
+        style: paradeStyle
+    });
+
+    var paradeZenLayer = L.geoJson(paradeZen, {
+        style: paradeStyle
+    });
+
+    var paradeGokoLayer = L.geoJson(paradeGoko, {
+        style: paradeStyle
+    })
+
+
     var honbuLayer = L.geoJson(honbu, {
         onEachFeature: onEachFeature,
         pointToLayer: pointToLayer
@@ -174,17 +187,6 @@ $(function () {
         pointToLayer: pointToLayer
     }).addTo(map);
 
-    var paradeTyuoLayer = L.geoJson(paradeTyuo, {
-        style: paradeStyle
-    });
-
-    var paradeZenLayer = L.geoJson(paradeZen, {
-        style: paradeStyle
-    });
-
-    var paradeGokoLayer = L.geoJson(paradeGoko, {
-        style: paradeStyle
-    })
 
 
     var osmLayer = L.tileLayer.provider('OpenStreetMap').addTo(map);

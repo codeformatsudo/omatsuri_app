@@ -215,7 +215,7 @@ $(function () {
     var overlays = [
 
         {
-            groupName: "イベント場所",
+            groupName: "イベント",
             expanded: false,
             layers: {
                 "中央ステージ": tyuouLayer,

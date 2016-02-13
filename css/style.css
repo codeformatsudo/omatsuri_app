@@ -39,21 +39,21 @@ body {
     position: relative;
     padding: 0;
     font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-    font-size: 14px;
-    font-size: 1.4rem
+    font-size: 16px;
+    font-size: 1.6rem
 }
 
 h1 {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 18px;
+    font-size: 1.8rem;
     color: #fff;
     margin: 0;
     text-align: center
 }
 
 section h1 {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 18px;
+    font-size: 1.8rem;
     color: #fff;
     margin: 0;
     text-align: center;
@@ -68,7 +68,7 @@ section h1 {
 
 section h2 {
     font-size: 20px;
-    font-size: 2rem;
+    font-size: 2.0rem;
     color: #ee7677;
     margin: 20px 0 16px 14px;
     margin: 2rem 0 1.6rem 1.4rem;
@@ -98,11 +98,11 @@ header h1 img {
 
 .slide-button {
     float: right;
-    font-size: 10px;
-    font-size: 1rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     padding: 2px;
     border: 1px solid #ccc;
-    background: #ccc;
+    background: #61a173;
     border-radius: 4px;
     color: #fff;
     margin: 4px 10px
@@ -219,31 +219,33 @@ ul.sub-nav li {
     width: 20%
 }
 
-ul.sub-nav li > a {
+.nav-tabs > li > a {
     display: block;
-    padding: 5px;
-    background: #eee;
-    font-size: 10px;
-    font-size: 1rem;
-    color: #999
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    background: #66B894;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #FFF;
 }
 
-ul.sub-nav li > a:hover {
-    background: #61a173;
-    color: #fff
-}
-
+.nav-tabs >li > a:hover,
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    color: #fff;
-    background-color: #61a173
+    display: block;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    background: #61a173;
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #FFF;
 }
 
-#schedule .nav li > a {
+.st-head-row.st-head-row-main {
     font-size: 14px;
     font-size: 1.4rem;
-    font-weight: 700
 }
 
 .twitter-timeline {
@@ -368,8 +370,8 @@ main .leaflet-top .leaflet-control-zoom {
 
 .ac-container label {
     padding: 10px 16px 10px 2px;
-    font-size: 9px;
-    font-size: 0.9rem;
+    font-size: 10px;
+    font-size: 1.0rem;
     height: 0;
     line-height: 0;
     margin-bottom: 0;
@@ -393,8 +395,8 @@ main .leaflet-top .leaflet-control-zoom {
 
 .menu-item-checkbox,
 .menu-item-radio {
-    font-size: 9px;
-    font-size: 0.9rem;
+    font-size: 10px;
+    font-size: 1.0rem;
     margin: 0 0 0 2px
 }
 
@@ -439,8 +441,8 @@ input[type=radio] {
 }
 
 .stacktable .font10 {
-    font-size: 10px;
-    font-size: 1rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     margin: 0 0 0 20px
 }
 
@@ -474,8 +476,8 @@ input[type=radio] {
 
 #footer-nav li {
     background: #eee;
-    font-size: 10px;
-    font-size: 1rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     color: #999;
     display: inline-block;
     padding: 6px;
@@ -511,8 +513,8 @@ footer {
 
 .copyright {
     border-top: 1px solid #ccc;
-    font-size: 12px;
-    font-size: 1.2rem
+    font-size: 14px;
+    font-size: 1.4rem
 }
 
 @media (max-width: 768px) {
@@ -546,6 +548,6 @@ footer {
         max-width: 100%
     }
     .leaflet-container .leaflet-control-attribution {
-        font-size: 9px
+        font-size: 10px
     }
 }

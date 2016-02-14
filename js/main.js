@@ -68,22 +68,22 @@ $(function () {
         })
         .setClassToggle('.support-title2', 'trans')
         .addTo(controller);
+    /*
+        var controller2 = new ScrollMagic.Controller();
 
-    var controller2 = new ScrollMagic.Controller();
+        new ScrollMagic.Scene({
+                triggerElement: '.schedule-contents',
+                offset: 220
+            })
+            .setPin('.nav-tabs')
+            .addTo(controller2);
 
-    new ScrollMagic.Scene({
-            triggerElement: '.schedule-contents',
-            offset: 220
-        })
-        .setPin('.nav-tabs')
-        .addTo(controller2);
+        new ScrollMagic.Scene({
+                triggerElement: '#support'
+            })
+            .removePin(true)
+            .addTo(controller2);
 
-    new ScrollMagic.Scene({
-            triggerElement: '#support'
-        })
-        .removePin(true)
-        .addTo(controller2);
-
-    var top = $('html').offset().top;
-
+        var top = $('html').offset().top;
+    */
 });

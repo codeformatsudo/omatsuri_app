@@ -1,12 +1,12 @@
 .font14 {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700
 }
 
 .font10 {
-    font-size: 10px;
-    font-size: 1rem
+    font-size: 12px;
+    font-size: 1.2rem
 }
 
 .h6 {
@@ -48,7 +48,8 @@ h1 {
     font-size: 1.8rem;
     color: #fff;
     margin: 0;
-    text-align: center
+    text-align: center;
+    padding: 5px;
 }
 
 section h1 {
@@ -67,13 +68,13 @@ section h1 {
 }
 
 section h2 {
+    background: #EE9CA1;
     font-size: 20px;
     font-size: 2.0rem;
-    color: #ee7677;
-    margin: 20px 0 16px 14px;
-    margin: 2rem 0 1.6rem 1.4rem;
-    padding: 0 0 0 10px;
-    padding: 0 0 0 1rem;
+    font-weight: 800;
+    color: #FFF;
+    margin: 20px 0 16px 0;
+    padding: 4px 0 4px 10px;
     border-left: 6px solid #eebebe
 }
 
@@ -86,8 +87,9 @@ ul {
 }
 
 header {
-    background: #eebebe;
-    padding: 3px
+    background: #EE9CA1;
+    padding: 3px;
+    border-bottom: 1px solid #FFF;
 }
 
 header h1 img {
@@ -127,38 +129,9 @@ header h1 img {
     animation: animation-text 0.5s ease 1s
 }
 
-@-webkit-keyframes "animation-text" {
-    from {
-        -ms-transform: scaleY(1);
-        -webkit-taransform: scaleY(1);
-        -webkit-transform: scaleY(1);
-        transform: scaleY(1);
-    }
-    to {
-        -ms-transform: scaleY(1.6);
-        -webkit-taransform: scaleY(1.6);
-        -webkit-transform: scaleY(1.6);
-        transform: scaleY(1.6);
-    }
-}
-
-@keyframes "animation-text" {
-    from {
-        -ms-transform: scaleY(1);
-        -webkit-taransform: scaleY(1);
-        -webkit-transform: scaleY(1);
-        transform: scaleY(1);
-    }
-    to {
-        -ms-transform: scaleY(1.6);
-        -webkit-taransform: scaleY(1.6);
-        -webkit-transform: scaleY(1.6);
-        transform: scaleY(1.6);
-    }
-}
-
 nav {
-    margin: 0px 0 0 0
+    margin: 0px 0 0 0;
+    background: #FFF;
 }
 
 ul.g-nav {
@@ -206,41 +179,9 @@ ul.g-nav li:last-child {
 }
 
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     fill: #ee9ca1
-}
-
-.sub-nav {
-    margin: 30px 0 0 0
-}
-
-ul.sub-nav li {
-    width: 20%
-}
-
-.nav-tabs > li > a {
-    display: block;
-    padding: 10px;
-    border-radius: 8px 8px 0 0;
-    background: #66B894;
-    font-size: 18px;
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #FFF;
-}
-
-.nav-tabs >li > a:hover,
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-    display: block;
-    padding: 10px;
-    border-radius: 8px 8px 0 0;
-    background: #61a173;
-    font-size: 18px;
-    font-size: 1.8rem;
-    color: #FFF;
 }
 
 .st-head-row.st-head-row-main {
@@ -272,9 +213,24 @@ section {
     margin: 40px auto 0 auto
 }
 
+img.section-img {
+    width:100%;
+    max-width: 100%;
+    height: auto;
+}
+
 section p {
     margin: 30px 0 30px 30px;
     margin: 3rem 0 3rem 3rem
+}
+
+.date {
+    margin-bottom: 10px;
+}
+
+.map-img {
+    margin: 0 0px 16px 0;
+    padding: 0;
 }
 
 .notice {
@@ -282,6 +238,11 @@ section p {
     padding: 10px;
     border: 3px solid #ee9ca1;
     border-radius: 5px
+}
+
+.notice-text {
+    color: #EB7680;
+    font-weight: 600;
 }
 
 .notice img {
@@ -406,8 +367,8 @@ main .leaflet-top .leaflet-control-zoom {
 
 input[type=checkbox],
 input[type=radio] {
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
     vertical-align: text-bottom
 }
 
@@ -425,13 +386,63 @@ input[type=radio] {
     background: #666
 }
 
+.sub-nav {
+    margin: 30px 0 0 0
+}
+
+ul.sub-nav li {
+    width: 20%
+}
+
+
+
+.nav-tabs li.tab1 a,
+.nav-tabs li.tab1.active a,
+.nav-tabs li.tab1.active a:hover{
+    display: block;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    background: #EE9CA1;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #FFF;
+}
+
+.nav-tabs li.tab2 a,
+.nav-tabs li.tab2.active a,
+.nav-tabs li.tab2.active a:hover{
+    display: block;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    background: #4AA15F;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #FFF;
+}
+
+#tab1 table {
+    border: 3px solid #EE9CA1;
+}
+
+#tab2 table {
+    border: 3px solid #4AA15F;
+}
+
 .stacktable th,
 .stacktable td {
     padding: 2px 4px
 }
 
-.stacktable th {
-    background: #ee9ca1;
+#tab1 .stacktable th {
+    background: #EE9CA1;
+    color: #fff;
+    border: 1px solid #fff
+}
+
+#tab2 .stacktable th {
+    background: #4AA15F;
     color: #fff;
     border: 1px solid #fff
 }

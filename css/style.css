@@ -222,7 +222,8 @@ main {
 
 section {
     max-width: 1080px;
-    margin: 40px auto 0 auto
+    margin: 100px auto 0 auto;
+    padding: 15px 0;
 }
 
 img.section-img {
@@ -273,7 +274,7 @@ section p {
 }
 
 section#home {
-    margin: 110px auto 0 auto
+    margin: 130px auto 0 auto
 }
 
 .sponsored {
@@ -290,7 +291,7 @@ section#home {
 }
 
 #map {
-    margin-top: 40px
+    margin-top: 120px
 }
 
 .leaflet-control-layers-overlays {

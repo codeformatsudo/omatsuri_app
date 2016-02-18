@@ -8,6 +8,9 @@
     font-size: 12px;
     font-size: 1.2rem
 }
+.font-b {
+    font-weight: 600;
+}
 
 .h6 {
     line-height: 0.7
@@ -79,7 +82,8 @@ section h2 {
 }
 
 .font-color-sub {
-    color: #ee7677
+    color: #ee7677;
+    font-weight: 800;
 }
 
 ul {
@@ -109,11 +113,12 @@ header h1 img {
     float: right;
     margin: 0px;
     padding: 2px;
-    border: 2px solid #FFF;
+    border: 2px solid #4AA15F;
     border-radius: 4px;
     width: 39px;
     height: 39px;
     fill: #FFF;
+    background: #4AA15F;
 }
 .btn {
         font-family: 'Pacifico';
@@ -129,16 +134,6 @@ header h1 img {
 
 .row {
     margin-left: 20px
-}
-
-.trans {
-    -webkit-animation: animation-text 0.5s ease;
-    animation: animation-text 0.5s ease
-}
-
-.trans2 {
-    -webkit-animation: animation-text 0.5s ease 1s;
-    animation: animation-text 0.5s ease 1s
 }
 
 nav {
@@ -222,10 +217,13 @@ main {
 
 section {
     max-width: 1080px;
-    margin: 100px auto 0 auto;
+    margin: 0 auto 0 auto;
     padding: 15px 0;
 }
 
+#home {
+    margin-top: 120px;
+}
 img.section-img {
     width:100%;
     max-width: 100%;
@@ -237,7 +235,7 @@ section p {
     margin: 3rem 0 3rem 3rem
 }
 
-.date {
+.margin-b-10 {
     margin-bottom: 10px;
 }
 
@@ -273,9 +271,7 @@ section p {
     text-align: center
 }
 
-section#home {
-    margin: 130px auto 0 auto
-}
+
 
 .sponsored {
     background: #ee9ca1;
@@ -290,8 +286,11 @@ section#home {
     margin-top: 14px
 }
 
-#map {
-    margin-top: 120px
+#map-page {
+    padding-top: 40px;
+}
+section.leaflet-control-layers-list {
+    padding: 0;
 }
 
 .leaflet-control-layers-overlays {
@@ -344,8 +343,8 @@ main .leaflet-top .leaflet-control-zoom {
 
 .ac-container label {
     padding: 10px 16px 10px 2px;
-    font-size: 10px;
-    font-size: 1.0rem;
+    font-size: 9px;
+    font-size: 0.9rem;
     height: 0;
     line-height: 0;
     margin-bottom: 0;
@@ -574,6 +573,9 @@ footer {
     .notice img {
         width: 110px;
         height: auto;
+    }
+    #map-page {
+        padding-top: 20px;
     }
 }
 

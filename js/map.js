@@ -188,30 +188,16 @@ $(function () {
     }).addTo(map);
 
 
-
+//baseMap
     var osmLayer = L.tileLayer.provider('OpenStreetMap').addTo(map);
-    var osmFranceLayer = L.tileLayer.provider('OpenStreetMap.France');
-    var mqoLayer = L.tileLayer.provider('MapQuestOpen');
-    var stamenLayer = L.tileLayer.provider('Stamen.TonerLite');
-    var cartoDbLayer = L.tileLayer.provider('CartoDB');
-    var thunderforestLayer = L.tileLayer.provider('Thunderforest');
 
-
-    var baseMaps = [
-        {
-            groupName: "背景地図",
-            expanded: false,
-            layers: {
-                "OSM": osmLayer,
-                "OSM.France": osmFranceLayer,
-                "MapQuestOpen": mqoLayer,
-                "Stamen": stamenLayer,
-                "CartoDB": cartoDbLayer,
-                "Thunderforest": thunderforestLayer
-
-            }
-        }
-    ];
+/*
+    var osmFranceLayer = L.tileLayer.provider('OpenStreetMap.France').addTo(map);
+    var mqoLayer = L.tileLayer.provider('MapQuestOpen').addTo(map);
+    var stamenLayer = L.tileLayer.provider('Stamen.TonerLite').addTo(map);
+    var cartoDbLayer = L.tileLayer.provider('CartoDB').addTo(map);
+    var thunderforestLayer = L.tileLayer.provider('Thunderforest').addTo(map);
+*/
     var overlays = [
 
         {
@@ -263,7 +249,7 @@ $(function () {
 
     };
 
-    var control = L.Control.styledLayerControl(baseMaps, overlays, options);
+    var control = L.Control.styledLayerControl('', overlays, options);
     map.addControl(control);
 
 });

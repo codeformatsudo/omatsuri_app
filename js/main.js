@@ -1,6 +1,16 @@
 $(function () {
     'use strict';
-
+! function (d, s, id) {
+                            var js;
+                            var fjs = d.getElementsByTagName(s)[0];
+                            var p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");
 
 
     //nav
@@ -37,37 +47,7 @@ $(function () {
         }
     });
 
-    var controller = new ScrollMagic.Controller({
-        globalSceneOptions: {
-            triggerHook: "onEnter"
-        }
-    });
 
-    new ScrollMagic.Scene({
-            triggerElement: '#home'
-        })
-        .setClassToggle('.eventday1', 'trans')
-        .addTo(controller);
-    new ScrollMagic.Scene({
-            triggerElement: '#home'
-        })
-        .setClassToggle('.eventday2', 'trans2')
-        .addTo(controller);
-    new ScrollMagic.Scene({
-            triggerElement: '#schedule'
-        })
-        .setClassToggle('.schedule-title', 'trans')
-        .addTo(controller);
-    new ScrollMagic.Scene({
-            triggerElement: '#support'
-        })
-        .setClassToggle('.support-title1', 'trans')
-        .addTo(controller);
-    new ScrollMagic.Scene({
-            triggerElement: '#support'
-        })
-        .setClassToggle('.support-title2', 'trans')
-        .addTo(controller);
     /*
         var controller2 = new ScrollMagic.Controller();
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
@@ -737,3 +738,744 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://domoritz.github.io/leaflet-locatecontrol/dist/L.Control.Locate.min.css">
+    <link rel="stylesheet" href="css/styledLayerControl.css">
+    <link rel="stylesheet" href="css/stacktable.css">
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>トップページ</title>
+</head>
+
+<body class="drawer drawer-right" data-spy="scroll" data-target="#nav-scroll">
+    <svg class="defs">
+        <symbol id="icon1" viewBox="0 0 512 512">
+            <path d="M256,0C139.563,0,45.172,94.406,45.172,210.828S210.875,512,256,512c45.109,0,210.828-184.75,210.828-301.172
+                              S372.438,0,256,0z M256,307.594c-53.453,0-96.766-43.328-96.766-96.766c0-53.453,43.313-96.766,96.766-96.766
+                              c53.438,0,96.766,43.313,96.766,96.766C352.766,264.266,309.438,307.594,256,307.594zz">
+            </path>
+        </symbol>
+        <symbol id="icon2" viewBox="0 0 512 512">
+            <path d="M257.135,19.179C103.967,19.179,0,97.273,0,218.763c0,74.744,31.075,134.641,91.108,173.176
+                              c4.004,2.572,8.728,2.962,6.955,10.365c-7.16,29.935-19.608,83.276-19.608,83.276c-0.527,2.26,0.321,4.618,2.162,6.03
+                              c1.84,1.402,4.334,1.607,6.38,0.507c0,0,87.864-52.066,99.583-58.573c27.333-15.625,50.878-18.654,68.558-18.654
+                              C376.619,414.89,512,366.282,512,217.458C512,102.036,418.974,19.179,257.135,19.179z"></path>
+        </symbol>
+        <symbol id="icon3" viewBox="0 0 512 512">
+            <path d="M256,215.41c44.322,0,80.26-35.938,80.26-80.264c0-44.318-35.938-80.256-80.26-80.256
+                              s-80.255,35.937-80.255,80.256C175.744,179.472,211.677,215.41,256,215.41z"></path>
+            <path d="M432.905,251.47c33.044,0,59.836-26.793,59.836-59.845c0-33.044-26.792-59.836-59.836-59.836
+                              c-33.045,0-59.845,26.792-59.845,59.836C373.06,224.677,399.86,251.47,432.905,251.47z"></path>
+            <path d="M433.584,265.224c-23.007,0-40.602,7.161-53.326,16.717c2.694,5.893,4.603,11.587,5.725,16.816l0.55,2.572
+                              v130.352h56.433c38.128,0,69.035-30.907,69.035-69.035v-45.151C507.878,298.247,483.108,265.224,433.584,265.224z"></path>
+            <path d="M79.096,131.788c-33.048,0-59.837,26.792-59.837,59.836c0,33.052,26.789,59.845,59.837,59.845
+                              s59.841-26.793,59.841-59.845C138.937,158.581,112.144,131.788,79.096,131.788z"></path>
+            <path d="M0,317.497v45.151c0,38.128,30.907,69.035,69.035,69.035h56.432V301.33l0.55-2.572
+                              c1.122-5.229,3.034-10.924,5.726-16.816c-12.729-9.556-30.323-16.717-53.326-16.717C28.892,265.224,4.126,298.247,0,317.497z"></path>
+            <path d="M256,233.86c-66.42,0-99.629,44.28-105.167,70.111v115.483c0,20.792,16.862,37.655,37.655,37.655h135.024
+                              c20.793,0,37.655-16.862,37.655-37.655V303.971C355.633,278.14,322.421,233.86,256,233.86z"></path>
+        </symbol>
+        <symbol id="icon4" viewBox="0 0 512 512">
+            <polygon points="433.198,205.502 363.908,136.267 308.912,81.341 256.089,28.324 0,284.219 37.928,322.123
+        256.089,104.142 474.071,322.123 512,284.219     "></polygon>
+            <polygon points="78.801,312.098 78.801,483.676 213.994,483.676 213.994,368.231 298.006,368.231 298.006,483.676
+        433.198,483.676 433.198,312.083 256.089,134.959     "></polygon>
+        </symbol>
+        <symbol id="icon-sakura" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <polygon style="fill:#EA94AC;" points="491.095,274.663 512,209.868 470.595,188.773 491.69,147.361 436.692,107.222
+            366.311,120.335 353.313,124.566 353.313,110.891 344.038,39.902 288.863,0 256.002,32.854 256.002,424.035 256.002,424.035
+            264.045,435.111 313.275,487.083 381.354,486.948 388.625,441.041 434.539,448.305 455.701,383.598 421.486,320.719
+            413.443,309.643 426.455,305.426         " />
+                    <polygon style="fill:#F1A4BD;" points="223.141,0 167.966,39.902 158.691,110.891 158.691,124.566 145.689,120.335
+            75.305,107.235 20.31,147.361 41.408,188.773 0,209.868 20.905,274.663 85.552,305.426 98.564,309.643 90.524,320.719
+            56.299,383.598 77.478,448.305 123.382,441.041 130.639,486.948 198.728,487.083 247.959,435.111 256.002,424.035 256.002,32.854
+                    " />
+                </g>
+                <path style="fill:#FFFFFF;" d="M362.737,245.803c0-9.383-7.596-16.973-16.966-16.973c-9.383,0-16.965,7.59-16.965,16.973
+        c0,4.813,2.003,9.166,5.24,12.254c-3.601,7.873-10.019,17.371-18.956,26.179c-5.781,5.707-15.354,13.655-28.054,19.26
+        c5.849-7.914,10.575-17.216,14.216-25.827c6.648-15.686,11.821-34.439,14.177-50.294c6.919-2.146,11.969-8.584,11.969-16.214
+        c0-9.376-7.609-16.959-16.979-16.959c-9.356,0-16.952,7.583-16.952,16.959c0,6.587,3.751,12.281,9.234,15.097
+        c-2.085,13.594-7.122,30.763-13.756,46.462c-8.205,19.402-17.967,32.076-27.866,36.111v-94.813
+        c9.898-2.62,13.933-9.944,13.933-18.59c0-10.819-8.476-19.606-19.308-19.606c-10.832,0-19.633,8.787-19.633,19.606
+        c0,8.577,5.213,15.862,13.133,18.536v94.826c-9.883-4.042-18.78-16.444-26.93-35.407c-6.621-15.395-10.954-32.286-13.052-45.724
+        c5.47-2.796,9.274-8.503,9.274-15.083c0-9.376-7.569-16.966-16.938-16.966c-9.383,0-16.966,7.59-16.966,16.966
+        c0,7.63,5.064,14.082,11.983,16.207c2.356,15.713,7.556,34.202,14.177,49.631c4.346,10.107,9.072,18.57,14.108,25.306
+        c-23.519-10.081-40.078-29.802-46.889-44.289c3.223-3.074,5.213-7.42,5.213-12.227c0-9.363-7.583-16.959-16.952-16.959
+        c-9.37,0-16.962,7.596-16.962,16.959c0,9.343,7.552,16.919,16.867,16.959c4.495,9.898,12.213,20.533,21.894,29.842
+        c19.308,18.523,43.382,28.772,67.794,28.772h0.176h0.108l0,0h1.016v0.331c23.749-0.094,48.013-10.683,67.361-29.726
+        c9.708-9.546,17.209-20.534,21.678-30.586C355.466,262.714,362.737,255.112,362.737,245.803z" />
+            </g>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 35 35">
+            <path fill="#FFFFFF" d="M31.157,3.051c0.012-0.017,0.025-0.032,0.035-0.05c-0.914,0.405-1.887,0.701-2.896,0.885
+    c-0.24,0.037-0.484,0.068-0.727,0.086c1.029-0.632,1.859-1.551,2.396-2.642c0.141-0.272,0.279-0.546,0.383-0.834
+    c-0.012,0.008-0.025,0.013-0.037,0.021c0.006-0.018,0.016-0.032,0.021-0.049c-1.238,0.733-2.607,1.266-4.064,1.553
+    C25.099,0.777,23.437,0,21.597,0c-3.535,0-6.399,2.866-6.399,6.4c0,0.46,0.053,0.908,0.145,1.34c0.006,0.04,0.009,0.078,0.014,0.117
+    C10.679,7.622,6.47,5.619,3.376,2.505C2.965,2.086,2.57,1.65,2.2,1.188C2.198,1.191,2.196,1.194,2.195,1.198
+    C2.188,1.189,2.179,1.181,2.172,1.171C1.621,2.117,1.305,3.216,1.305,4.39c0,1.833,0.777,3.479,2.012,4.646
+    c0.245,0.242,0.505,0.472,0.788,0.676c-1.031-0.04-2.002-0.323-2.852-0.795c0,0.027,0,0.053,0,0.08c0,2.579,1.535,4.783,3.733,5.797
+    c0.427,0.206,0.869,0.379,1.344,0.49c-0.521,0.136-1.066,0.214-1.63,0.214c-0.365,0-0.716-0.044-1.063-0.103
+    c-0.035-0.01-0.075-0.013-0.109-0.023c0.002,0.004,0.004,0.009,0.006,0.013c-0.012-0.002-0.025,0-0.037-0.004
+    c0.713,2.228,2.613,3.922,4.954,4.345c0.325,0.064,0.658,0.104,0.997,0.121c-2.187,1.703-4.935,2.718-7.922,2.718
+    c-0.414,0-0.821-0.033-1.227-0.069c-0.093-0.02-0.19-0.026-0.282-0.046c0.019,0.01,0.037,0.02,0.055,0.031
+    C0.048,22.478,0.023,22.478,0,22.475c2.832,1.816,6.196,2.877,9.81,2.877c6.505,0,11.371-2.982,14.432-7.076
+    c0.01-0.012,0.02-0.023,0.031-0.038c0.295-0.392,0.563-0.798,0.818-1.21c0.055-0.085,0.115-0.164,0.164-0.249
+    c0.24-0.394,0.457-0.797,0.664-1.204c0.053-0.101,0.111-0.2,0.16-0.303c0.244-0.493,0.461-0.996,0.658-1.506
+    c0.004-0.005,0.006-0.01,0.008-0.017c0.836-2.164,1.271-4.428,1.271-6.608c0-0.277-0.006-0.553-0.016-0.828
+    c0.992-0.718,1.877-1.583,2.635-2.551c0.193-0.24,0.389-0.481,0.57-0.732C31.188,3.039,31.173,3.044,31.157,3.051z"/>
+<text transform="matrix(1 0 0 1 0.7373 35.0435)" font-family="'Meiryo-Bold'" font-size="11" letter-spacing="-1">をみる</text>
+        </symbol>
+    </svg>
+    <div id="wrap">
+        <div class="navbar-fixed-top">
+            <header>
+
+                  <div class="row">
+                  <div class="col-xs-7">
+                <h1><img src="img/sakura-img.svg" alt=""> 常盤平さくら祭り</h1>
+                      </div>
+                <div class="col-xs-3">
+                    <div class="dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    language
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-item" href="#">English</li>
+    <li class="dropdown-item" href="#">日本語</li>
+
+  </ul>
+</div>
+                </div>
+                <div class="col-xs-2">
+                <a href="#slidebar" class="slide-button">
+                               <svg class="icon-twitter icon-map">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a>
+                            </div>
+                </div>
+            </header>
+            <div id="slidebar">
+
+                <div>
+                    <a class="twitter-timeline" href="https://twitter.com/hashtag/%E5%B8%B8%E7%9B%A4%E5%B9%B3%E3%81%95%E3%81%8F%E3%82%89%E3%81%BE%E3%81%A4%E3%82%8A" data-widget-id="700312073255854080">#常盤平さくらまつり のツイート</a>
+                </div>
+
+            </div>
+            <nav id="nav-scroll">
+                <ul class="g-nav nav">
+                    <li>
+                        <a href="#home" class="nav1">
+                            <svg class="icon icon-map">
+                                <use xlink:href="#icon4"></use>
+                            </svg>
+                            <br>HOME</a>
+                    </li>
+                    <li>
+                        <a href="#map-page" class="nav2">
+                            <svg class="icon icon-map">
+                                <use xlink:href="#icon1"></use>
+                            </svg>
+                            <br>マップ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#schedule" class="nav3">
+                            <svg class="icon icon-map">
+                                <use xlink:href="#icon2"></use>
+                            </svg>
+                            <br>イベント
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#support" class="nav4">
+                            <svg class="icon icon-map">
+                                <use xlink:href="#icon3"></use>
+                            </svg>
+                            <br>協力・協賛</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-img"><img src="img/main-img.jpg" alt="常盤平さくらまつり"></div>
+        <main>
+            <section id="home">
+               <div class="date">
+                <div class="row margin-b-10">
+                    <div class="col-md-3 eventday1">2016/　<span class="h3 font-color-sub">4/2</span>　土</div>
+                    <div class="col-md-3">　<span class="font-b">歩行者天国</span>: 11:00-19:00</div>
+                    <div class="col-md-3"><span class="font-b">道路沿い屋台</span>: 11:00-18:00</div>
+                    <div class="col-md-3">　　<span class="font-b">交通規制</span>: 10:45-19:00</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 eventday2">2016/　<span class="h3 font-color-sub">4/3</span>　日</div>
+                    <div class="col-md-3">　<span class="font-b">歩行者天国</span>: 10:00-18:00</div>
+                    <div class="col-md-3"><span class="font-b">道路沿い屋台</span>: 10:00-17:00</div>
+                    <div class="col-md-3">　　<span class="font-b">交通規制</span>: 9:45-18:00</div>
+                </div><br>
+                </div>
+                <img src="img/main2.jpg" alt="" class="section-img">
+                <h2>場所</h2>
+                <div class="row">
+                    <div class="col-md-3 map-img">
+                        <img src="img/map.png" alt="">
+                    </div>
+                    <div class="col-md-5">
+                        <span class="font-b">常盤平さくら通り</span>
+                        <br>
+                        <span class="font10">（ゆりの木通り交差点から五香駅前までと西友前けやき通り）</span>
+                        <div class="guide"> イベント開催場所・トイレなどは<a href="#map">マップ</a>からご覧ください</div>
+                        <span class="font10">※雨天決行、イベントや出店は天候等により中止の場合があります</span>
+                    </div>
+                    <div class="col-mid-4">
+                    <ul>
+                        <li>新京成線　八柱駅<br>　JR武蔵野線　新八柱駅　徒歩15分</li>
+                        <li>新京成線　常盤平駅前</li>
+                        <li>新京成線　五香駅　徒歩1分</li>
+                    </ul>
+                    <div class="font10 margin-left20">※駐車場はありません。 公共交通機関をご利用ください。
+                    </div>
+                    </div>
+                </div>
+                <div class="notice">
+                    <div class="float-left">
+                        <img src="img/volunteer.png" alt="">
+                    </div>
+                    <div class="clearfix">
+                        <span class="notice-text">ゴミはゴミ箱へ、串は串入れへ</span>
+                        <br> 分別にご協力ください
+                        <br>
+                        <span class="font14">※常盤平中学校・牧の原中学校・第四中学校・金ヶ作中学校の生徒さんに清掃ボランティアとして参加していただいています。</span>
+                        <br>
+                        <br> マナーを守ってさくらまつりをお楽しみください。
+                        <!--注意事項について詳しくは「<a href="caution.html">ご注意</a>」のページをご覧ください。-->
+                        <ul>
+                            <li>常盤平さくらまつりでは歩行者天国内は<span class="notice-text">禁煙</span>です</li>
+                            <li>公園でのバーベキューは<span class="notice-text">禁止</span>です</li>
+                            <li><span class="notice-text">公園での飲食</span>は近隣住民の迷惑とならないよう、<span class="notice-text">歩行者天国時間内</span>にお願いします</li>
+                            <li>無許可の<span class="notice-text">ドローン等</span>の飛行・撮影は<span class="notice-text">禁止</span>します</li>
+                        </ul>
+                    </div>
+                </div>
+                <h2>問い合わせ</h2> 常盤平さくらまつり実行委員会
+                <br> 電話: 090-6527-9348（当日のみ）
+                <div class="top-footer">
+                    <span class="sponsored">主催</span>第45回常盤平さくらまつり実行委員会
+                    <br>
+                    <span class="sponsored">後援</span>松戸市、松戸市観光協会、松戸商工会議所、松戸市社会福祉協議会
+                </div>
+            </section>
+            <div id="map-page">
+                <div id="map"></div>
+            </div>
+            <section id="schedule">
+                <h2 class="schedule-title">イベントスケジュール</h2>
+                <span class="font10">※イベントや出店は天候等により中止の場合があります</span>
+                <br>
+                <br> <span class="font-b">わくわくマーケット</span>　はなみずき公園
+                <br>
+                <span class="font10">
+          2日（土）11:00〜19:00　　3日（日）10:00〜18:00
+      </span>
+                <br> <span class="font-b">テント村</span>　常盤平駅前
+                <br>
+                <span class="font10">
+          2日（土）11:00〜18:00　　3日（日）10:00〜17:00
+      </span>
+                <br> <span class="font-b">駅前ひろば</span>　常盤平駅前
+                <br>
+                <span class="font10">
+          2日（土）11:00〜18:00　　3日（日）10:00〜17:00
+      </span>
+                <br> <span class="font-b">献血</span>　西友・ココス間の献血車
+                <br>
+                <span class="font10">
+          2日（土）11:30〜16:30　　3日（日）10:30〜16:30
+      </span>
+                <div class="schedule-contents">
+                    <ul class="nav nav-tabs sub-nav">
+                        <li class="tab1 active"><a href="#tab1" data-toggle="tab">4月2日（土）</a></li>
+                        <li class="tab2"><a href="#tab2" data-toggle="tab">4月3日（日）</a></li>
+                    </ul>
+                    <div id="tabcontent" class="tab-content">
+                        <div id="tab1" class="tab-pane fade in active">
+                            <table id="event-table1" class="stacktable large-only">
+                                <tr>
+                                    <th>時間</th>
+                                    <th>中央ステージ</th>
+                                    <th>西友第２駐車場横</th>
+                                    <th>駅前テント村</th>
+                                    <th>中央パレード
+                                        <br><span class="font10">（西友横出発）</span></th>
+                                    <th>五香パレード</th>
+                                    <th>全さくら通りパレード
+                                        <br><span class="font10">（ゆりの木通り交差点出発）</span></th>
+                                </tr>
+                                <tr>
+                                    <td>11:00</td>
+                                    <td>よさこいソーラン
+                                        <br><span class="font10">常盤平第一小学校</span></td>
+                                    <td></td>
+                                    <td>税金クイズに挑戦
+                                        <br><span class="font10">松戸法人会</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>11:10</td>
+                                    <td>常二ソーラン
+                                        <br><span class="font10">常盤平第二小学校</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>11:30</td>
+                                    <td>吹奏楽演奏
+                                        <br><span class="font10">金ヶ作中学校</span></td>
+                                    <td>チャリティライブ
+                                        <br><span class="font10">実行委員会</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>11:50</td>
+                                    <td>吹奏楽演奏
+                                        <br><span class="font10">常盤平中学校</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>12:30</td>
+                                    <td>オープニングセレモニー
+                                        <br><span class="font10">常盤平さくらまつり実行委員会</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>13:05</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        音楽隊パレード
+                                        <br><span class="font10">松戸市消防音楽隊</span>
+                                        <br> 音楽隊パレード先導
+                                        <br><span class="font10">PINK DIAMONDS</span>
+                                        <br> 交通安全パレード
+                                        <br><span class="font10">松戸交通安全母の会</span>
+                                        <br> 鼓笛隊パレード
+                                        <br><span class="font10">ボーイスカウト松戸第一団</span>
+                                        <br>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>13:10</td>
+                                    <td>踊りの祭典
+                                        <br><span class="font10">松戸舞踊連合会</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>13:40</td>
+                                    <td>ハワイアンフラ
+                                        <br><span class="font10">松戸ハワイアン・フラサークル</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>14:05</td>
+                                    <td>芸能部踊り
+                                        <br><span class="font10">松戸はつらつクラブ連合会</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>14:10</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>PINK DIAMONDSパレード
+                                        <br><span class="font10">PINK DIAMONDS</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>14:20</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>阿波踊り
+                                        <br><span class="font10">松戸阿波踊り合同連<br>やまぶき公園・さくら通り</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>14:35</td>
+                                    <td>ハワイアンフラ
+                                        <br><span class="font10">ハーラウ　ホオモハラ　イアロノプア<br>返町フラスタジオ</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>15:00</td>
+                                    <td>ふぁんきーFUNKY☆Kid'd dance
+                                        <br><span class="font10">ふぁんきーFUNKY DANCE TEAM</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>15:25</td>
+                                    <td>Let's Cheer Dance Show time
+                                        <br><span class="font10">Al☆Cheer Dance Studio</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>15:50</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>ショートフラッグ　チアダンスショー
+                                        <br><span class="font10">PINK DIAMONDS</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>16:15</td>
+                                    <td>市松モダンダンス演技
+                                        <br><span class="font10">市立松戸高校　モダンダンス部</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>16:40</td>
+                                    <td>渡部まいこさくらライブ
+                                        <br><span class="font10">渡部まいこ</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>17:10</td>
+                                    <td>ダブルダッチ＆なわとびロープショー
+                                        <br><span class="font10">Steel＆なわとび親子</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>17:35</td>
+                                    <td>台湾桜の親善大使演歌歌手特別ライブ
+                                        <br><span class="font10">飛鳥とも美</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="tab2" class="tab-pane fade">
+                            <table id="event-table2" class="stacktable large-only">
+                                <tr>
+                                    <th>時間</th>
+                                    <th>中央ステージ</th>
+                                    <th>西友第２駐車場横</th>
+                                    <th>駅前テント村</th>
+                                    <th>中央パレード
+                                        <br><span class="font10">（西友横出発）</span></th>
+                                    <th>五香パレード</th>
+                                    <th>全さくら通りパレード
+                                        <br><span class="font10">（ゆりの木通り交差点出発）</span></th>
+                                </tr>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td>吹奏楽発表
+                                        <br><span class="font10">栗ヶ沢中学校</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>10:20</td>
+                                    <td>吹奏楽演奏
+                                        <br><span class="font10">第四中学校</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>10:30</td>
+                                    <td>チャリティーライブ</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>鼓笛隊パレード
+                                        <br><span class="font10">創価学会富士鼓笛隊</span></td>
+                                </tr>
+                                <tr>
+                                    <td>11:20</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>神輿パレード
+                                        <br><span class="font10">常盤平神輿舎</span>
+                                        <br> 山車パレード
+                                        <br><span class="font10">松戸つづみ連</span></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>11:25</td>
+                                    <td>ロックソーラン
+                                        <br><span class="font10">松二小ロックソーラン隊</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>11:50</td>
+                                    <td>かっぽれ河のや梅若寿連
+                                        <br><span class="font10">端唄舞かっぽれ河のや梅若寿会</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>12:00</td>
+                                    <td>サンバパレード
+                                        <br><span class="font10">フロール・デ・松戸・セレージャ</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>12:20</td>
+                                    <td>Kids HIPPOP danceの発表
+                                        <br><span class="font10">MJC dance company</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>12:45</td>
+                                    <td>ハワイアン　フラ
+                                        <br><span class="font10">ラウレア・フラスタジオ</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>13:10</td>
+                                    <td>日本舞踊
+                                        <br><span class="font10">亀志穂会</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>13:40</td>
+                                    <td>コナミスポーツ五香キッズダンス
+                                        <br><span class="font10">コナミスポーツ　ジュニアスクール五香</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>鼓笛隊パレード
+                                        <br><span class="font10">ボーイスカウト松戸第一団</span>
+                                        <br> ポイ捨てをなくし松戸を美しい街に
+                                        <br><span class="font10">メイク松戸ビューティフル</span></td>
+                                </tr>
+                                <tr>
+                                    <td>14:05</td>
+                                    <td>松戸国際高校ダンス同好会Wassup
+                                        <br><span class="font10">松戸国際高校ダンス同好会Wassup</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>14:30</td>
+                                    <td>”かんかんでり”のライブです
+                                        <br><span class="font10">かんかんでり</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>14:55</td>
+                                    <td>チアダンスパフォーマンス
+                                        <br><span class="font10">CHEER☆S.K.D</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>15:20</td>
+                                    <td>ブレイクダンスHIPPOPダンス
+                                        <br><span class="font10">TOBITORA</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>15:50</td>
+                                    <td>BMXのパフォーマンス
+                                        <br><span class="font10">中島倶楽部</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>16:15</td>
+                                    <td>Belly Dance From 松戸EVA
+                                        <br><span class="font10">松戸EVA Belly dance Studio</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>16:40</td>
+                                    <td>唱頂の大員ライブ
+                                        <br><span class="font10">唱頂の大員</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="support">
+                <h2 class="support-title1">協力</h2> 松戸市立常盤平中学校、牧野原中学校、第四中学校、金ヶ作中学校、栗ヶ沢中学校、常盤平第一小学校、常盤平第二小学校、松戸市立松戸高校、県立松戸国際高校、（公財）日本さくらの会、（公社）松戸法人会、（公社）松戸青年会議所、（公社）松戸青年会議所、（公社）松戸青色申告会、松戸交通安全母の会、松戸東交通安全協会、常盤平地区防犯協会、常盤平神興会、日本ボーイスカウト松戸第一団、常盤平中央病院、常盤平郵便局、メイク松戸ビューティフル、西友常盤平店、常盤平1〜7丁目町会、常盤平双葉町町会、常盤平西窪町町会、常盤平柳町町会、常盤平二丁目さくら自治会、常盤平団地自治会、サンロード五香商店街、五香さくら通り商店街、常盤平駅前通り商店街、常盤平3丁目仲通り商店街、常盤平中央商店街、常盤平南部商店会、常盤平東店舗商店会、五香東口商店街、Shino'舞、Code for Matsudo
+
+                <h2 class="support-title2">協賛</h2> ライフケアメモリイプレイス常盤平、（有）韮澤工務店、（株）URコミュニティ松戸住まいセンター、新京成電鉄（株）、マブチモーター（株）、（株）トップ常盤平店、千葉西総合病院、昭和セレモニー松戸儀式殿、松戸南部市場いちごマルシェ（株）、松戸南ライオンズクラブ、（株）セレモ八柱駅北口ホール、サッポロビール（株）首都圏本部千葉支店、ウエルシア薬局松戸常盤平店、（株）、常盤興業（株）、（株）杉浦葬儀店、（株）アトレ松戸店、テイケイ（株）、（株）レントオール東葛、川光物産（株）、ピーナッツサブレー本舗富井、ユニディ松戸ときわ平店、千葉銀行常盤平支店、京葉銀行常盤平支店、朝日信用金庫ときわ平支店、東京東信用金庫ときわ平支店、JAとうかつ常盤平支店、、あかね常盤平店、ときわ平ボウリングセンター、コカ・コーライーストジャパン（株）松戸支店、（株）共立商事、（株）東興不動産販売、（株）マツドサンヨー、（株）３３工房、デイサービスもみの木、（株）ヤカ、大衆割烹花車、（有）佐藤管設、セブンタウン常盤平店、愛育会やばしら歯科、セレモニーホール江戸川会館、松戸東自動車学校、夢屋五香店、東洋証券（株）松戸五香支店、（株）さかもと、（株）たむら、（株）中央医療研究所、（株）野村建功、常盤平中央病院、わくわくマーケット
+            </section>
+        </main>
+        <footer>
+            <div id="footer">
+                <div class="copyright">Powered by Code for Matsudo</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/jquery.mmenu.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+    <script src="js/t.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/leaflet.geocsv.js"></script>
+    <script src="js/leaflet-providers.js"></script>
+    <script src="https://domoritz.github.io/leaflet-locatecontrol/dist/L.Control.Locate.min.js"></script>
+    <script src="js/styledLayerControl.js"></script>
+    <!--<script src="js/Leaflet.ControlledBounds.js"></script>-->
+    <script src="js/map.js"></script>
+    <script src="js/sakura.js"></script>
+    <script src="js/stacktable.js"></script>
+    <script src="data/sakuradori.geojson"></script>
+    <script src="data/toilet.geojson"></script>
+    <script src="data/ekimae.geojson"></script>
+    <script src="data/tentomura.geojson"></script>
+    <script src="data/tyuou.geojson"></script>
+    <script src="data/wakuwaku.geojson"></script>
+    <script src="data/charity.geojson"></script>
+    <script src="data/donation.geojson"></script>
+    <script src="data/tyuo-parade.geojson"></script>
+    <script src="data/zen-parade.geojson"></script>
+    <script src="data/goko-parade.geojson"></script>
+    <script src="data/honbu.geojson"></script>
+    <script src="data/tent3.geojson"></script>
+    <script src="data/tent4.geojson"></script>
+    <script src="data/tent5.geojson"></script>
+    <script src="data/shelter.geojson"></script>
+</body>
+
+</html>
+>>>>>>> addMap

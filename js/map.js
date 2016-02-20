@@ -222,7 +222,7 @@ $(function () {
             }
         },
         {
-            groupName: "テント・避難所",
+            groupName: "テント・避難",
             expanded: false,
             layers: {
                 "本部テント": honbuLayer,

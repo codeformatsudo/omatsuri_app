@@ -203,6 +203,7 @@ $(function () {
         {
             groupName: "イベント",
             expanded: false,
+            exclusive: true,
             layers: {
                 "中央ステージ": tyuouLayer,
                 "チャリティライブ": charityLayer,

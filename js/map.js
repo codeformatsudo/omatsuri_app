@@ -209,7 +209,7 @@ $(function () {
                 "チャリティライブ": charityLayer,
                 "駅前ひろば": ekimaeLayer,
                 "テント村": tentomuraLayer,
-                "わくわく広場": wakuwakuLayer,
+                "わくわくマーケット": wakuwakuLayer,
                 "献血車": bloodDonationLayer
             }
         },

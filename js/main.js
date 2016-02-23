@@ -26,13 +26,21 @@ $(function () {
             }
         });
 
-    var offset = 100;
-
+    var offset = 0;
 
     $('.g-nav li a').smoothScroll({
         offset: -90
     });
     $('.guide a').smoothScroll({
+        offset: -90
+    });
+    $('#schedule a').smoothScroll({
+        offset: -90
+    });
+    $('.nav-tabs a').smoothScroll({
+        offset: 0
+    });
+    $('.to-top a').smoothScroll({
         offset: -90
     });
 
@@ -46,24 +54,4 @@ $(function () {
             zposition: 'front'
         }
     });
-
-
-    /*
-        var controller2 = new ScrollMagic.Controller();
-
-        new ScrollMagic.Scene({
-                triggerElement: '.schedule-contents',
-                offset: 220
-            })
-            .setPin('.nav-tabs')
-            .addTo(controller2);
-
-        new ScrollMagic.Scene({
-                triggerElement: '#support'
-            })
-            .removePin(true)
-            .addTo(controller2);
-
-        var top = $('html').offset().top;
-    */
 });

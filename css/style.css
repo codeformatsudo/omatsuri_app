@@ -23,9 +23,12 @@
 .margin-left20 {
     margin: 0 0 0 20px
 }
-
+a {
+    color: #2a6496;
+}
 a:hover {
-    text-decoration: none
+    text-decoration: none;
+    color: #0D2E49;
 }
 
 .center {
@@ -102,7 +105,7 @@ header {
 header .row {
     margin-left: 0;
 }
-header .col-xs-7,
+header .col-xs-8,
 header .col-xs-3 {
     padding: 0;
 }
@@ -221,12 +224,12 @@ ul.g-nav li:last-child {
     display: none
 }
 
-.main-img {
+#main-img {
     position: relative;
     top: 100px;
 }
 
-.main-img img {
+#main-img img {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -551,6 +554,10 @@ ul.sub-nav li {
     background-color: rgba(0, 0, 0, 0.2)
 }
 
+.to-top {
+    margin: 20px auto;
+    text-align: center;
+}
 footer {
     text-align: center;
     padding: 0px
@@ -574,12 +581,9 @@ footer {
         padding: 7px 20px 7px 0;
     }
 
-    header .slide-button {
-        margin: 5px
-    }
     header h1 {
-        font-size: 20px;
-        font-size: 2.0rem;
+        font-size: 18px;
+        font-size: 1.8rem;
     }
     header h1 img {
         max-width: 40%
@@ -587,7 +591,18 @@ footer {
     header .col-xs-2 {
         padding: 0;
     }
-
+    .col-xs-1 {
+        padding-right: 0;
+        margin-top: 3px;
+    }
+    .icon-twitter {
+        width: 26px;
+        height: 31px;
+    }
+    .btn {
+        padding: 2px 3px;
+        margin-top: 6px;
+    }
     .map-img img {
         width: 140px;
         height: auto;

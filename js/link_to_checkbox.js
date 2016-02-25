@@ -21,7 +21,7 @@ $(function () {
         "駅前ひろば": "#leaflet-control-accordion-layers-0 > article > div:nth-child(3) > input",
         "テント村": "#leaflet-control-accordion-layers-0 > article > div:nth-child(4) > input",
         "わくわくマーケット": "#leaflet-control-accordion-layers-0 > article > div:nth-child(5) > input",
-        "献血車": "#leaflet-control-accordion-layers-0 > article > div:nth-child(6) > input",
+        "献血": "#leaflet-control-accordion-layers-0 > article > div:nth-child(6) > input",
       "中央パレード": "#leaflet-control-accordion-layers-1 > article > div:nth-child(1) > input",
       "五香パレード": "#leaflet-control-accordion-layers-1 > article > div:nth-child(3) > input",
       "全さくら通りパレード": "#leaflet-control-accordion-layers-1 > article > div:nth-child(2) > input"

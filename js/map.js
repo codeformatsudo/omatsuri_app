@@ -1,6 +1,8 @@
 $(function () {
 
-
+  var url = window.location.href.split("/").pop();
+  console.log(url == "index_en.html");
+  
     //mapSize
     function mapSize() {
         var w = $(window).width();
@@ -198,6 +200,14 @@ $(function () {
     var cartoDbLayer = L.tileLayer.provider('CartoDB').addTo(map);
     var thunderforestLayer = L.tileLayer.provider('Thunderforest').addTo(map);
 */
+
+/*
+   $(window).on("pageshow", function(){
+        var url = window.location.href.split('/').pop();
+
+       if( url == 'index.html'){
+console.log(url);
+*/
     var overlays = [
 
         {
@@ -241,6 +251,100 @@ $(function () {
             }
         },
 ];
+    if(url == "index_en.html") {
+      overlays = [
+        {
+          groupName: "Event",
+          expanded: false,
+          exclusive: true,
+          layers: {
+            "Main Stage": tyuouLayer,
+            "Charity Stage": charityLayer,
+            "Station Square": ekimaeLayer,
+            "Tent Village": tentomuraLayer,
+            "Waku-Waku Market": wakuwakuLayer,
+            "Blood Drive": bloodDonationLayer
+          }
+        },
+        {
+          groupName: "Parade",
+          expanded: false,
+          layers: {
+            "Central Parade Route": paradeTyuoLayer,
+            "Sakura Dori Parade Route ": paradeZenLayer,
+            "Goko Parade Route": paradeGokoLayer
+          }
+        },
+        {
+          groupName: "Help",
+          expanded: false,
+          layers: {
+            "Main Tent": honbuLayer,
+            "3Chome Tent": tent3Layer,
+            "4Chome Tent": tent4Layer,
+            "5Chome Tent": tent5Layer,
+            "Evac. Zone": shelterLayer
+          }
+        },
+        {
+          groupName: "Toilets",
+          expanded: true,
+          layers: {
+            "temp. toilets": toiletLayer
+          }
+        }
+      ];
+    }
+  
+    /*
+       } else if( url == 'index_en.html'){
+
+       var overlays = [
+
+        {
+            groupName: "Event",
+            expanded: false,
+            exclusive: true,
+            layers: {
+                "Main Stage": tyuouLayer,
+                "Charity Stage": charityLayer,
+                "Station Square": ekimaeLayer,
+                "Tent Village": tentomuraLayer,
+                "Waku-Waku Market": wakuwakuLayer,
+                "Blood Drive": bloodDonationLayer
+            }
+        },
+        {
+            groupName: "Parade",
+            expanded: false,
+            layers: {
+                "Central Parade Route": paradeTyuoLayer,
+                "Sakura Dori Parade Route ": paradeZenLayer,
+                "Goko Parade Route": paradeGokoLayer
+            }
+        },
+        {
+            groupName: "Help",
+            expanded: false,
+            layers: {
+                "Main Tent": honbuLayer,
+                "3Chome Tent": tent3Layer,
+                "4Chome Tent": tent4Layer,
+                "5Chome Tent": tent5Layer,
+                "Evac. Zone": shelterLayer
+            }
+        },
+        {
+            groupName: "Toilets",
+            expanded: true,
+            layers: {
+                "temp. toilets": toiletLayer,
+            }
+        },
+	];
+       }
+   });
+*/
 
     var options = {
         container_maxHeight: "500px",

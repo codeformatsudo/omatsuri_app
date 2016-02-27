@@ -1,8 +1,4 @@
 $(function () {
-
-  var url = window.location.href.split("/").pop();
-  console.log(url == "index_en.html");
-  
     //mapSize
     function mapSize() {
         var w = $(window).width();
@@ -208,6 +204,9 @@ $(function () {
        if( url == 'index.html'){
 console.log(url);
 */
+
+  var url = window.location.href.split("/").pop();
+
     var overlays = [
 
         {

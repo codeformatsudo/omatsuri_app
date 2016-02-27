@@ -198,6 +198,14 @@ $(function () {
     var cartoDbLayer = L.tileLayer.provider('CartoDB').addTo(map);
     var thunderforestLayer = L.tileLayer.provider('Thunderforest').addTo(map);
 */
+
+/*
+   $(window).on("pageshow", function(){
+        var url = window.location.href.split('/').pop();
+
+       if( url == 'index.html'){
+console.log(url);
+*/
     var overlays = [
 
         {
@@ -241,6 +249,55 @@ $(function () {
             }
         },
 ];
+    /*
+       } else if( url == 'index_en.html'){
+
+       var overlays = [
+
+        {
+            groupName: "Event",
+            expanded: false,
+            exclusive: true,
+            layers: {
+                "Main Stage": tyuouLayer,
+                "Charity Stage": charityLayer,
+                "Station Square": ekimaeLayer,
+                "Tent Village": tentomuraLayer,
+                "Waku-Waku Market": wakuwakuLayer,
+                "Blood Drive": bloodDonationLayer
+            }
+        },
+        {
+            groupName: "パレード",
+            expanded: false,
+            layers: {
+                "Central Parade Route": paradeTyuoLayer,
+                "Sakura Dori Parade Route ": paradeZenLayer,
+                "Goko Parade Route": paradeGokoLayer
+            }
+        },
+        {
+            groupName: "テント・避難",
+            expanded: false,
+            layers: {
+                "本部テント": honbuLayer,
+                "3丁目テント": tent3Layer,
+                "4丁目テント": tent4Layer,
+                "5丁目テント": tent5Layer,
+                "緊急避難場所": shelterLayer
+            }
+        },
+        {
+            groupName: "トイレ",
+            expanded: true,
+            layers: {
+                "仮設トイレ": toiletLayer,
+            }
+        },
+];
+       }
+   });
+*/
 
     var options = {
         container_maxHeight: "500px",

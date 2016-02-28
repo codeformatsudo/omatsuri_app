@@ -1,6 +1,4 @@
 $(function () {
-
-
     //mapSize
     function mapSize() {
         var w = $(window).width();
@@ -199,13 +197,8 @@ $(function () {
     var thunderforestLayer = L.tileLayer.provider('Thunderforest').addTo(map);
 */
 
-/*
-   $(window).on("pageshow", function(){
-        var url = window.location.href.split('/').pop();
+  var url = window.location.href.split("/").pop();
 
-       if( url == 'index.html'){
-console.log(url);
-*/
     var overlays = [
 
         {
@@ -249,55 +242,51 @@ console.log(url);
             }
         },
 ];
-    /*
-       } else if( url == 'index_en.html'){
 
-       var overlays = [
-
+    if(url == "index_en.html") {
+      overlays = [
         {
-            groupName: "Event",
-            expanded: false,
-            exclusive: true,
-            layers: {
-                "Main Stage": tyuouLayer,
-                "Charity Stage": charityLayer,
-                "Station Square": ekimaeLayer,
-                "Tent Village": tentomuraLayer,
-                "Waku-Waku Market": wakuwakuLayer,
-                "Blood Drive": bloodDonationLayer
-            }
+          groupName: "Event",
+          expanded: false,
+          exclusive: true,
+          layers: {
+            "Main Stage": tyuouLayer,
+            "Charity Stage": charityLayer,
+            "Station Square": ekimaeLayer,
+            "Tent Village": tentomuraLayer,
+            "Waku-Waku Market": wakuwakuLayer,
+            "Blood Drive": bloodDonationLayer
+          }
         },
         {
-            groupName: "パレード",
-            expanded: false,
-            layers: {
-                "Central Parade Route": paradeTyuoLayer,
-                "Sakura Dori Parade Route ": paradeZenLayer,
-                "Goko Parade Route": paradeGokoLayer
-            }
+          groupName: "Parade",
+          expanded: false,
+          layers: {
+            "Central Parade Route": paradeTyuoLayer,
+            "Sakura Dori Parade Route ": paradeZenLayer,
+            "Goko Parade Route": paradeGokoLayer
+          }
         },
         {
-            groupName: "テント・避難",
-            expanded: false,
-            layers: {
-                "本部テント": honbuLayer,
-                "3丁目テント": tent3Layer,
-                "4丁目テント": tent4Layer,
-                "5丁目テント": tent5Layer,
-                "緊急避難場所": shelterLayer
-            }
+          groupName: "Help",
+          expanded: false,
+          layers: {
+            "Main Tent": honbuLayer,
+            "3Chome Tent": tent3Layer,
+            "4Chome Tent": tent4Layer,
+            "5Chome Tent": tent5Layer,
+            "Evac. Zone": shelterLayer
+          }
         },
         {
-            groupName: "トイレ",
-            expanded: true,
-            layers: {
-                "仮設トイレ": toiletLayer,
-            }
-        },
-];
-       }
-   });
-*/
+          groupName: "Toilets",
+          expanded: true,
+          layers: {
+            "temp. toilets": toiletLayer
+          }
+        }
+      ];
+    }
 
     var options = {
         container_maxHeight: "500px",

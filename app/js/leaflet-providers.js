@@ -100,7 +100,7 @@
             url: '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
             options: {
                 minZoom: 14,
-                maxZoom: 19,
+                maxZoom: 18,
                 attribution:
                     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             },
@@ -154,6 +154,8 @@
         Thunderforest: {
             url: '//{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png',
             options: {
+                 minZoom: 14,
+                maxZoom: 18,
                 attribution:
                     '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, {attribution.OpenStreetMap}',
                 variant: 'cycle'
@@ -227,6 +229,8 @@
             options: {
                 type: 'map',
                 ext: 'jpg',
+                 minZoom: 14,
+                maxZoom: 18,
                 attribution:
                     'Tiles Courtesy of <a href="http://www.mapquest.com/">MapQuest</a> &mdash; ' +
                     'Map data {attribution.OpenStreetMap}',
@@ -268,8 +272,8 @@
                     '<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; ' +
                     'Map data {attribution.OpenStreetMap}',
                 subdomains: 'abcd',
-                minZoom: 0,
-                maxZoom: 20,
+                minZoom: 14,
+                maxZoom: 18,
                 variant: 'toner',
                 ext: 'png'
             },
@@ -283,8 +287,8 @@
                 Watercolor: {
                     options: {
                         variant: 'watercolor',
-                        minZoom: 1,
-                        maxZoom: 16
+                         minZoom: 14,
+                        maxZoom: 18
                     }
                 },
                 Terrain: {
@@ -541,7 +545,8 @@
             options: {
                 attribution: '{attribution.OpenStreetMap} &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
                 subdomains: 'abcd',
-                maxZoom: 19,
+                 minZoom: 14,
+                maxZoom: 18,
                 variant: 'light_all'
             },
             variants: {

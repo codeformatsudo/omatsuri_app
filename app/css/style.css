@@ -233,7 +233,7 @@ ul.g-nav li:last-child {
 
 #main-img {
     position: relative;
-    top: 100px;
+    top: 123px;
 }
 
 #main-img img {
@@ -609,6 +609,9 @@ footer {
     .btn {
         padding: 2px 3px;
         margin-top: 6px;
+    }
+     #main-img {
+        top: 95px;
     }
     .map-img img {
         width: 140px;

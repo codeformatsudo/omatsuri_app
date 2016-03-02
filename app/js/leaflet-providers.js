@@ -11,7 +11,6 @@
     }
 }(this, function (L) {
     'use strict';
-
     L.TileLayer.Provider = L.TileLayer.extend({
         initialize: function (arg, options) {
             var providers = L.TileLayer.Provider.providers;

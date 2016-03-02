@@ -49,6 +49,13 @@
   ga('create', 'UA-74441674-1', 'auto');
   ga('send', 'pageview');
 
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+
 </script>
 </head>
 
@@ -181,14 +188,14 @@
             <nav id="nav-scroll">
                 <ul class="g-nav nav">
                     <li>
-                        <a href="#main-img" class="nav1">
+                        <a href="#main-img" class="nav1" onclick="trackOutboundLink('#main-img'); return false;">
                             <svg class="icon icon-map">
                                 <use xlink:href="#icon4"></use>
                             </svg>
                             <br>HOME</a>
                     </li>
                     <li>
-                        <a href="#map-page" class="nav2">
+                        <a href="#map-page" class="nav2" onclick="trackOutboundLink('#map-page'); return false;">
                             <svg class="icon icon-map">
                                 <use xlink:href="#icon1"></use>
                             </svg>
@@ -196,7 +203,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#schedule" class="nav3">
+                        <a href="#schedule" class="nav3" onclick="trackOutboundLink('#schedule'); return false;">
                             <svg class="icon icon-map">
                                 <use xlink:href="#icon2"></use>
                             </svg>
@@ -205,7 +212,7 @@
                     </li>
 
                     <li>
-                        <a href="#support" class="nav4">
+                        <a href="#support" class="nav4" onclick="trackOutboundLink('#support'); return false;">
                             <svg class="icon icon-map">
                                 <use xlink:href="#icon3"></use>
                             </svg>

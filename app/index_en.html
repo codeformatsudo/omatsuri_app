@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
 
     <meta name="description" content="The official website for the Tokiwadaira Cherry Blossom Festival along Sakura Dori in Matsudo, Chiba. Sakura Dori has been chosen as of 'The 100 Best Roads in Japan'">
-    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
     <meta property="og:title" content="Tokiwadaira Cherry Blossom Festival" />
 <meta property="og:type" content="website" />
@@ -70,6 +69,13 @@ var trackOutboundLink = function(url) {
       version    : 'v2.5'
     });
   };
+          (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
 </script>
     <svg class="defs">
         <symbol id="icon1" viewbox="0 0 512 512"><path d="M256,0C139.563,0,45.172,94.406,45.172,210.828S210.875,512,256,512c45.109,0,210.828-184.75,210.828-301.172

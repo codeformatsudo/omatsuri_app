@@ -4,7 +4,6 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8">
     <meta name="description" content="「日本の道100選」に選ばれた千葉県松戸市のさくら通りで開催される、常盤平さくらまつり公式Webサイト">
-    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
     <meta property="og:title" content="常盤平さくらまつり" />
 <meta property="og:type" content="website" />
@@ -68,6 +67,13 @@ var trackOutboundLink = function(url) {
       version    : 'v2.5'
     });
   };
+(function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
 </script>
     <svg class="defs">
         <symbol id="icon1" viewBox="0 0 512 512">

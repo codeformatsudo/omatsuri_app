@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://www.skaura-matsuri.com/sitemap.xml
+Sitemap: http://code4matsudo.org/t-sakuramatsuri/sitemap.xml

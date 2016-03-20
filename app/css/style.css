@@ -566,12 +566,35 @@ ul.sub-nav li {
     text-align: center;
 }
 footer {
+    border-top: 1px solid #ccc;
     text-align: center;
     padding: 0px
 }
-
+.iodd {
+    position:relative;
+    padding: .5em .75em;
+    background-color: #EE9CA1;
+    border-radius: 6px;
+    width: 40%;
+    color: #FFF;
+    margin: 10px auto;
+}
+.iodd::after {
+    position: absolute;
+    top: 100%;
+    left:30%;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 15px solid #EE9CA1;
+}
+.iodd img {
+    width: 30px;
+    height: auto;
+    margin-right: 6px;
+}
 .copyright {
-    border-top: 1px solid #ccc;
     font-size: 14px;
     font-size: 1.4rem
 }
@@ -623,6 +646,9 @@ footer {
     }
     #map-page {
         padding-top: 20px;
+    }
+    .iodd {
+        width: 80%;
     }
 }
 
